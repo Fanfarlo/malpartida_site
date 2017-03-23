@@ -39,11 +39,16 @@ width: 64px;
 margin-left: 5px;
 }
 
-.icon-menu {
+.ham-btn {
     position: absolute;
     right: 5px;
     padding: 5px 0 0 0;
 width: 45px;
+}
+.ham-btn img:hover{
+  background-color: rgba(255, 153, 0, 0.85);
+  border-radius: 50%;
+  border: 0.1px dashed #05386b;
 }
 nav {
     width: 300px;
@@ -54,10 +59,9 @@ nav {
     transform: translate(-300px, 0);
     /* Optionally, we animate the drawer. */
     transition: transform 0.3s ease;
-}
-.green {
     background-color: green;
 }
+
 
 nav.open {
     -webkit-transform: translate(0, 0);

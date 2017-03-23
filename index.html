@@ -9,6 +9,7 @@
     <meta name="description" content="Transportes y Mudanzas Malpartida es una empresa de carga, mudanzas y embalajes en el distrito de Lima">
     <title>Transportes y Mudanzas Malpartida</title>
     <link href="css/styles.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,11 +17,11 @@
         <div class="logo">
             <img src="img/logo.svg" alt="logo">
         </div>
-        <div class="icon-menu">
-          <a href="#"id="menu"><img src="img/hambur.svg" alt="hamburger"></a>
-        </div>
+          <div class="ham-btn">
+          <a  id="ham-icon"><img  src="img/ham-icon.svg" alt="hamburger"></a>
+          </div>
     </header>
-    <nav id="drawer" class="green">
+    <nav id="drawer" class="menu">
         <ul>
             <li>Inicio</li>
             <li>Nosotros</li>
@@ -44,21 +45,25 @@
         <div class="copyright">
         </div>
     </footer>
+    <script asyc src="js/jquery-3.2.0.min.js"></script>
     <script>
         /*
          * Open the drawer when the menu ison is clicked.
          */
-        var menu = document.querySelector('#menu');
-        var main = document.querySelector('main');
-        var drawer = document.querySelector('.green');
 
-        menu.addEventListener('click', function(e) {
-            drawer.classList.toggle('open');
-            e.stopPropagation();
-        });
-        document.addEventListener('click', function() {
-            drawer.classList.remove('open');
-        });
+var displayMenu = function(){
+  $('#ham-icon').click(function(event){
+    $('#drawer').toggleClass('open')
+    event.stopPropagation()
+  })
+
+  $("body").click(function(){
+    $('#drawer').toggleClass()
+  })
+};
+displayMenu();
+
+
     </script>
 </body>
 
