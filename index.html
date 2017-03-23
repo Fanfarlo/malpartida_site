@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="camion, carga, embalajes, mudanzas, transportes">
+    <meta name="description" content="Transportes y Mudanzas Malpartida es una empresa de carga, mudanzas y embalajes en el distrito de Lima">
+    <title>Transportes y Mudanzas Malpartida</title>
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+        <div class="icon-menu">
+          <a href="#"id="menu"><img src="img/hambur.svg" alt="hamburger"></a>
+        </div>
+    </header>
+    <nav id="drawer" class="green">
+        <ul>
+            <li>Inicio</li>
+            <li>Nosotros</li>
+            <li>Servicios</li>
+            <li>Contacto</li>
+        </ul>
+    </nav>
+    <main>
+        <div class="hero">
+        </div>
+        <div class="services">
+        </div>
+        <div class="budget">
+        </div>
+     </main>
+    <footer>
+        <div class="contact">
+        </div>
+        <div class="social">
+        </div>
+        <div class="copyright">
+        </div>
+    </footer>
+    <script>
+        /*
+         * Open the drawer when the menu ison is clicked.
+         */
+        var menu = document.querySelector('#menu');
+        var main = document.querySelector('main');
+        var drawer = document.querySelector('.green');
+
+        menu.addEventListener('click', function(e) {
+            drawer.classList.toggle('open');
+            e.stopPropagation();
+        });
+        document.addEventListener('click', function() {
+            drawer.classList.remove('open');
+        });
+    </script>
+</body>
+
+</html>
