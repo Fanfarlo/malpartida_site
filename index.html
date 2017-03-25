@@ -21,12 +21,20 @@
           <a  id="ham-icon"><img  src="img/ham-icon.svg" alt="hamburger"></a>
           </div>
     </header>
-    <nav id="drawer" class="menu">
+    <nav id="drawer">
+        <div class="nav-head">
+            <p class="box box-1 orange">Embalajes</p>
+            <p class="box box-2 blue">Mudanzas</p>
+            <p class="box box-3 orange">Transportes</p>
+          <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+          </div>
+        </div>
         <ul>
-            <li>Inicio</li>
-            <li>Nosotros</li>
-            <li>Servicios</li>
-            <li>Contacto</li>
+            <li>Inicio<div class="next-btn"><img src="img/next.svg" alt="next"></div></li>
+            <li>Servicios<div class="next-btn"><img src="img/next.svg" alt="next"></div></li>
+            <li>Cotizaciones<div class="next-btn"><img src="img/next.svg" alt="next"></div></li>
+            <li>Contacto<div class="next-btn"><img src="img/next.svg" alt="next"></div></li>
         </ul>
     </nav>
     <main>
@@ -58,7 +66,7 @@ var displayMenu = function(){
   })
 
   $("body").click(function(){
-    $('#drawer').toggleClass()
+    $('#drawer').removeClass("open")
   })
 };
 displayMenu();
