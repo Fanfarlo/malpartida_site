@@ -14,8 +14,6 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-
-
 * {
     margin: 0;
     padding: 0;
@@ -41,7 +39,7 @@ header {
     display: flex;
     position: fixed;
     padding: 4px 0 0 0;
-    box-shadow: 0 1px 8px rgba(0,0,0,.3)
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .3)
 }
 
 main {
@@ -65,15 +63,15 @@ footer {
     right: 5px;
     padding: 5px 0 0 0;
     width: 45px;
-
 }
-.ham-btn p{
-  position: absolute;
-  right: 50px;
-  top:19px;
-  color: #05386b;
-  font-weight: 700;
-  letter-spacing: 1.5px;
+
+.ham-btn p {
+    position: absolute;
+    right: 50px;
+    top: 19px;
+    color: #05386b;
+    font-weight: 700;
+    letter-spacing: 1.5px;
 }
 
 .ham-btn img:hover {
@@ -93,7 +91,6 @@ nav {
     transition: transform 0.3s ease;
     background-color: white;
     font-family: "Roboto", sans-serif;
-
 }
 
 nav.open {
@@ -116,7 +113,7 @@ nav .logo {
 
 ul {
     display: block;
-  color:#ff9900;
+    color: #ff9900;
     padding: 0 0 0 25px;
     font-size: 1.2em;
 }
@@ -131,41 +128,48 @@ li {
     padding: 0px 0 0px 0px;
     border-bottom: 1px solid rgb(225, 225, 225);
 }
-.box{
-  font-family: "Roboto", sans-serif;
-  font-size: .8em;
-  text-align: center;
-  font-weight: 700;
-  color: white;
-  padding: 2px 4px 2px 4px;
-  position: absolute;
-  height: 20px;
-  width: 100px;
-  border-radius: 2%;
+
+.box {
+    font-family: "Roboto", sans-serif;
+    font-size: .8em;
+    text-align: center;
+    font-weight: 700;
+    color: white;
+    padding: 2px 4px 2px 4px;
+    position: absolute;
+    height: 20px;
+    width: 100px;
+    border-radius: 2%;
 }
-.nav-content{display: relative;
-  left: ;
+
+.nav-content {
+    display: relative;
+    left: ;
 }
-.box-1{
-  margin: 1px 0 0 90px;
+
+.box-1 {
+    margin: 1px 0 0 90px;
 }
-.box-2{
-  margin: 19px 0 0 104px;
+
+.box-2 {
+    margin: 19px 0 0 104px;
 }
-.box-3{
-  margin: 36px 0 0 120px;
+
+.box-3 {
+    margin: 36px 0 0 120px;
 }
 
 .blue {
     background-color: #05386b;
 }
+
 .orange {
     background-color: #ff9900;
 }
-.next-btn{
-  width: 13px;
-display: inline-block;
-position: absolute;
 
-  right: 15px;
+.next-btn {
+    width: 13px;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
 }
