@@ -103,7 +103,7 @@ nav.open {
     height: 64px;
     display: flex;
     padding-top: 3px;
-    border-bottom: 1px solid rgb(235, 235, 235);
+    border-bottom: 1px solid rgb(242, 242, 242);
 }
 
 nav .logo {
@@ -126,7 +126,7 @@ li {
     list-style: none;
     height: 50px;
     padding: 0px 0 0px 0px;
-    border-bottom: 1px solid rgb(225, 225, 225);
+    border-bottom: 1px solid rgb(242, 242, 242);
 }
 
 .box {
