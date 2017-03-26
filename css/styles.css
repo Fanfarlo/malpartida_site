@@ -14,13 +14,7 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-@font-face {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 900;
-    src: local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
+
 
 * {
     margin: 0;
@@ -37,6 +31,7 @@ body {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
 }
 
 header {
@@ -70,6 +65,15 @@ footer {
     right: 5px;
     padding: 5px 0 0 0;
     width: 45px;
+
+}
+.ham-btn p{
+  position: absolute;
+  right: 50px;
+  top:19px;
+  color: #05386b;
+  font-weight: 700;
+  letter-spacing: 1.5px;
 }
 
 .ham-btn img:hover {
@@ -120,17 +124,18 @@ ul {
 li {
     width: 100%;
     background-color: ;
-    display: block;
+    display: flex;
+    align-items: center;
     list-style: none;
     height: 50px;
-    padding: 14px 0 12px 0px;
-    border-bottom: 1px solid rgb(230, 230, 230);
+    padding: 0px 0 0px 0px;
+    border-bottom: 1px solid rgb(225, 225, 225);
 }
 .box{
   font-family: "Roboto", sans-serif;
   font-size: .8em;
   text-align: center;
-  font-weight: 900;
+  font-weight: 700;
   color: white;
   padding: 2px 4px 2px 4px;
   position: absolute;
@@ -158,9 +163,9 @@ li {
     background-color: #ff9900;
 }
 .next-btn{
-  width: 3%;
-display: inline;
+  width: 13px;
+display: inline-block;
 position: absolute;
-padding: 3px 0 0 0;
+
   right: 15px;
 }
