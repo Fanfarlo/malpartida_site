@@ -91,6 +91,7 @@ nav {
     -webkit-transform: translate(100%, 0);
     transform: translate(-100%, 0);
     /* Optionally, we animate the drawer. */
+    -webkit-transition: -webkit-transform 0.3s ease;
     transition: transform 0.3s ease;
     background-color: white;
     font-family: "Roboto", sans-serif;
@@ -184,6 +185,6 @@ li {
   color: white;
 }
 .close-btn{
-  width: 45px;
-  margin:5px 0 0px 25px;
+  width: 25px;
+  margin:15px 0 0px 25px;
 }
