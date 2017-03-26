@@ -102,7 +102,7 @@ nav.open {
     height: 64px;
     display: flex;
     padding-top: 3px;
-    border-bottom: 1px solid rgb(200, 200, 200);
+    border-bottom: 1px solid rgb(225, 225, 225);
 }
 
 nav .logo {
@@ -124,7 +124,7 @@ li {
     list-style: none;
     height: 50px;
     padding: 14px 0 12px 0px;
-    border-bottom: 1px solid rgb(185, 185, 185);
+    border-bottom: 1px solid rgb(225, 225, 225);
 }
 .box{
   font-family: "Roboto", sans-serif;
