@@ -88,11 +88,12 @@ nav {
     height: 100%;
     position: absolute;
     /* This trasform moves the drawer off canvas. */
+
     -webkit-transform: translate(100%, 0);
+    -ms-transform: translate(100%, 0);
     transform: translate(-100%, 0);
     /* Optionally, we animate the drawer. */
-    -webkit-transition: -webkit-transform 0.3s ease;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
     background-color: white;
     font-family: "Roboto", sans-serif;
     z-index: 4;
@@ -183,6 +184,10 @@ li {
 #drawer li:hover{
   background-color: #05386b;
   color: white;
+}
+#drawe a {
+  width: 100%
+
 }
 .close-btn{
   width: 25px;
