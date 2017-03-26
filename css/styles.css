@@ -102,7 +102,7 @@ nav.open {
     height: 64px;
     display: flex;
     padding-top: 3px;
-    border-bottom: .5px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(200, 200, 200);
 }
 
 nav .logo {
@@ -113,7 +113,7 @@ nav .logo {
 ul {
     display: block;
   color:#ff9900;
-    padding: 0 0 0 15px;
+    padding: 0 0 0 25px;
     font-size: 1.2em;
 }
 
@@ -124,7 +124,7 @@ li {
     list-style: none;
     height: 50px;
     padding: 14px 0 12px 0px;
-    border-bottom: .5px solid rgb(170, 170, 170);
+    border-bottom: 1px solid rgb(185, 185, 185);
 }
 .box{
   font-family: "Roboto", sans-serif;
@@ -158,9 +158,9 @@ li {
     background-color: #ff9900;
 }
 .next-btn{
-  width: 18px;
+  width: 3%;
 display: inline;
 position: absolute;
 padding: 3px 0 0 0;
-  right: 10px;
+  right: 15px;
 }
