@@ -46,8 +46,9 @@ header {
     background-color: rgb(92, 219, 149);
     width: 100%;
     height: 64px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -95,14 +96,17 @@ nav {
     -ms-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
     /* Optionally, we animate the drawer. */
+    transition: -webkit-transform 0.5s ease-in-out;
     transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     background-color: white;
     font-family: "Roboto", sans-serif;
 }
 
 nav.open {
     -webkit-transform: translate(0, 0);
-    transform: translate(0, 0);
+    -ms-transform: translate(0, 0);
+        transform: translate(0, 0);
 }
 
 /*-------navigation list-----*/
@@ -134,12 +138,18 @@ nav.open {
 .nav-head {
     width: 100%;
     height: 64px;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
-    align-content: space-between;
-    align-items: center;
+    -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid rgb(240, 240, 240);
 }
 
