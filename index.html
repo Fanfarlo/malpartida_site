@@ -13,34 +13,35 @@
 </head>
 
 <body>
-    <header id="header">
+    <header>
       <div class="logo">
           <img src="img/logo.svg" alt="logo">
       </div>
-      <div class="ham-btn">
+      <div class="ham-btn open">
         <p>MENU</p>
-        <a  id="ham-icon"><img  src="img/ham-icon.svg" alt="hamburger"></a>
+        <a class="open"><img  src="img/ham-icon.svg" alt="hamburger"></a>
       </div>
     </header>
     <nav class="drawer">
         <div class="nav-head">
-            <div class="close-btn">
+            <div class="close-btn close">
               <svg viewBox="-381 203.8 153.2 153.2"><path d="M-271.2 247.2c-2.9-2.9-7.6-2.9-10.6 0l-23.2 23.2-23.2-23.2c-2.9-2.9-7.6-2.9-10.6 0s-2.9 7.6 0 10.6l23.2 23.2-23.2 23.2c-2.9 2.9-2.9 7.6 0 10.6 1.5 1.5 3.4 2.2 5.3 2.2s3.8-.7 5.3-2.2l23.2-23.2 23.2 23.2c1.5 1.5 3.4 2.2 5.3 2.2s3.8-.7 5.3-2.2c2.9-2.9 2.9-7.6 0-10.6l-23.2-23.2 23.2-23.2c2.9-3 2.9-7.7 0-10.6z" fill="#05386B"/><circle cx="-304.4" cy="280.4" r="72.6" fill="none" stroke="#05386B" stroke-width="10" stroke-miterlimit="10"/></svg>
             </div>
+            <p class="text-btn close">CERRAR</p>
             <div class="nav-content">
-              <p class="box box-1">Embalajes</p>
-              <p class="box box-2">Mudanzas</p>
-              <p class="box box-3">Transportes</p>
+              <p class="box top">Embalajes</p>
+              <p class="box middle">Mudanzas</p>
+              <p class="box bottom">Transportes</p>
             </div>
             <div class="logo">
               <img src="img/logo.svg" alt="logo">
             </div>
         </div>
         <ul>
-            <li><a href="#header">Inicio<div class="next-btn"><svg viewBox="-240 42.8 477.2 477.2"><path d="M141.9 272.9L-61.4 69.6c-4.8-4.8-12.5-4.8-17.3 0-4.8 4.8-4.8 12.5 0 17.3L116 281.5-78.7 476.1c-4.8 4.8-4.8 12.5 0 17.3 2.3 2.3 5.5 3.6 8.6 3.6s6.2-1.2 8.6-3.6l203.3-203.3c4.8-4.7 4.8-12.5.1-17.2z"fill="#E8E8E8"stroke="#EBEBEB"stroke-width="45"stroke-miterlimit="10"/></svg></div></a></li>
-            <li><a href="#">Servicios<div class="next-btn"><img src="img/next.svg" alt="next"></div></a></li>
-            <li><a href="#">Cotizaciones<div class="next-btn"><img src="img/next.svg" alt="next"></div></a></li>
-            <li><a href="#">Contacto<div class="next-btn"><img src="img/next.svg" alt="next"></div></a></li>
+            <li><a class="close" href="#">Inicio<div class="next-btn"><svg viewBox="-240 42.8 477.2 477.2"><path d="M141.9 272.9L-61.4 69.6c-4.8-4.8-12.5-4.8-17.3 0-4.8 4.8-4.8 12.5 0 17.3L116 281.5-78.7 476.1c-4.8 4.8-4.8 12.5 0 17.3 2.3 2.3 5.5 3.6 8.6 3.6s6.2-1.2 8.6-3.6l203.3-203.3c4.8-4.7 4.8-12.5.1-17.2z"fill="#e6e6e6"stroke="#e6e6e6"stroke-width="45"stroke-miterlimit="10"/></svg></div></a></li>
+            <li><a class="close" href="#">Servicios<div class="next-btn"><img src="img/next.svg" alt="next"></div></a></li>
+            <li><a class="close" href="#">Cotizaciones<div class="next-btn"><img src="img/next.svg" alt="next"></div></a></li>
+            <li><a class="close" href="#">Contacto<div class="next-btn"><img src="img/next.svg" alt="next"></div></a></li>
         </ul>
     </nav>
     <main>
@@ -66,12 +67,12 @@
          */
 
 var displayMenu = function(){
-  $('#ham-icon').click(function(event){
+  $('.open').click(function(event){
     $('.drawer').toggleClass('open')
     event.stopPropagation()
   })
 
-  $(".close-btn").click(function(){
+  $(".close").click(function(){
     $('.drawer').removeClass("open")
   })
 };

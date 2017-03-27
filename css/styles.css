@@ -51,7 +51,7 @@ header {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
-position: fixed;
+    position: fixed;
     padding: 4px 0 0 0;
     box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 }
@@ -68,7 +68,7 @@ position: fixed;
     width: 45px;
 }
 
-.ham-btn p {
+header p {
     position: absolute;
     right: 50px;
     top: 19px;
@@ -98,7 +98,6 @@ nav {
     transition: transform 0.5s ease-in-out;
     background-color: white;
     font-family: "Roboto", sans-serif;
-
 }
 
 nav.open {
@@ -115,13 +114,13 @@ nav.open {
 
 .drawer li {
     height: 50px;
-    border-bottom: 1px solid rgb(240, 240, 240);
+    border-bottom: 1px solid rgb(239, 239, 239);
 }
 
 .drawer a {
     display: block;
     color: #ff9900;
-    padding: 12px 0 12px 25px;
+    padding: 12px 0 12px 30px;
     width: 100%;
     height: 100%;
 }
@@ -130,6 +129,7 @@ nav.open {
     color: white;
     background-color: #05386b;
 }
+
 /*--------Navigation header-------*/
 .nav-head {
     width: 100%;
@@ -139,12 +139,30 @@ nav.open {
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     align-content: space-between;
-    padding-top: 3px;
+    align-items: center;
     border-bottom: 1px solid rgb(240, 240, 240);
 }
 
+.close-btn {
+    width: 25px;
+    margin: 0 0 0 5px;
+}
+
+.text-btn {
+  position: absolute;
+  left: 34px;
+  color: #05386b;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.nav-content{
+  position: absolute;
+  right: 75px;
+}
+
 nav .logo {
-    margin-right: 15px;
+    margin: 6px 5px 0 0px;
 }
 
 .box {
@@ -153,40 +171,33 @@ nav .logo {
     text-align: center;
     font-weight: 700;
     color: white;
-    padding: 2px 4px 2px 4px;
+    padding: 2px 0 2px 0;
     height: 20px;
     width: 100px;
-    border-radius: 2%;
+    border-radius: 3%;
 }
 
-.close-btn {
-    width: 25px;
-    margin: 15px 0 0px 25px;
-}
-
-
-.box-1 {
+.top {
     margin: 0px 0 0 10px;
     background-color: #ff9900;
 }
 
-.box-2 {
+.middle {
     margin: -2px 0 0 22px;
     background-color: #05386b;
 }
 
-.box-3 {
+.bottom {
     margin: -2px 0 0 34px;
     background-color: #ff9900;
 }
-
 
 
 .next-btn {
     width: 13px;
     display: inline-block;
     position: absolute;
-    right: 15px;
+    right:15px;
 }
 
 
