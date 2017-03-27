@@ -14,6 +14,9 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
+
+/*-----------------------general--------------------------------------*/
+
 * {
     margin: 0;
     padding: 0;
@@ -27,33 +30,30 @@ img {
 
 body {
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
     font-family: "Roboto", sans-serif;
+    width: 100%;
+    height: 100%;
 }
-a{
-  text-decoration: none;
-color:inherit;
+
+a {
+    text-decoration: none;
 }
+
+
+/*--------------------------header-------------------------*/
+
 header {
     background-color: rgb(92, 219, 149);
     width: 100%;
     height: 64px;
     display: flex;
-    position: fixed;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+position: fixed;
     padding: 4px 0 0 0;
-    box-shadow: 0 1px 8px rgba(0, 0, 0, .3)
-}
-
-main {
-    height: 200px;
-    width: 100%;
-}
-
-footer {
-    background-color: yellow;
-    height: 200px;
-    width: 100%;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
 }
 
 .logo {
@@ -83,20 +83,22 @@ footer {
     border: 1.5px dashed #05386b;
 }
 
+
+/*------------------------navigation menu------------------*/
+
 nav {
     width: 100%;
     height: 100%;
-    position: absolute;
+    position: fixed;
     /* This trasform moves the drawer off canvas. */
-
-    -webkit-transform: translate(100%, 0);
-    -ms-transform: translate(100%, 0);
+    -webkit-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
     transform: translate(-100%, 0);
     /* Optionally, we animate the drawer. */
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     background-color: white;
     font-family: "Roboto", sans-serif;
-    z-index: 4;
+
 }
 
 nav.open {
@@ -104,6 +106,31 @@ nav.open {
     transform: translate(0, 0);
 }
 
+/*-------navigation list-----*/
+
+.drawer ul {
+    font-size: 1.2em;
+    list-style: none;
+}
+
+.drawer li {
+    height: 50px;
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+
+.drawer a {
+    display: block;
+    color: #ff9900;
+    padding: 12px 0 12px 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.drawer a:hover {
+    color: white;
+    background-color: #05386b;
+}
+/*--------Navigation header-------*/
 .nav-head {
     width: 100%;
     height: 64px;
@@ -113,30 +140,12 @@ nav.open {
     -ms-flex-pack: justify;
     align-content: space-between;
     padding-top: 3px;
-    border-bottom: 1px solid rgb(242, 242, 242);
+    border-bottom: 1px solid rgb(240, 240, 240);
 }
 
 nav .logo {
-margin-right: 15px;
+    margin-right: 15px;
 }
-
-ul {
-    display: block;
-color: #ff9900;
-    padding: 0 0 0 0px;
-    font-size: 1.2em;
-}
-
-li {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    height: 50px;
-    padding: 0px 0 0px 25px;
-    border-bottom: 1px solid rgb(242, 242, 242);
-}
-
 
 .box {
     font-family: "Roboto", sans-serif;
@@ -150,29 +159,28 @@ li {
     border-radius: 2%;
 }
 
-.nav-content {
-  margin: 0 0px 0 0px;
+.close-btn {
+    width: 25px;
+    margin: 15px 0 0px 25px;
 }
+
 
 .box-1 {
     margin: 0px 0 0 10px;
+    background-color: #ff9900;
 }
 
 .box-2 {
     margin: -2px 0 0 22px;
+    background-color: #05386b;
 }
 
 .box-3 {
     margin: -2px 0 0 34px;
-}
-
-.blue {
-    background-color: #05386b;
-}
-
-.orange {
     background-color: #ff9900;
 }
+
+
 
 .next-btn {
     width: 13px;
@@ -181,15 +189,14 @@ li {
     right: 15px;
 }
 
-#drawer li:hover{
-  background-color: #05386b;
-  color: white;
-}
-#drawe a {
-  width: 100%
 
+main {
+    height: 500px;
+    width: 100%;
 }
-.close-btn{
-  width: 25px;
-  margin:15px 0 0px 25px;
+
+footer {
+    background-color: yellow;
+    height: 500px;
+    width: 100%;
 }
