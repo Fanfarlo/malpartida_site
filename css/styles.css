@@ -141,6 +141,9 @@ nav.open {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
@@ -148,25 +151,34 @@ nav.open {
 }
 
 .close-btn {
-    width: 25px;
-    margin: 0 0 0 5px;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5px;
+  margin-right: auto;
+
 }
 
 .text-btn {
-  position: absolute;
-  left: 34px;
   color: #05386b;
   font-weight: 700;
   letter-spacing: 1.5px;
+  padding: 0 0 0 4px;
+
 }
 
-.nav-content{
-  position: absolute;
-  right: 75px;
-}
-
-nav .logo {
-    margin: 6px 5px 0 0px;
+.logo-nav {
+  width: 65px;
+-webkit-align-self: stretch;
+    -ms-flex-item-align: stretch;
+            -ms-grid-row-align: stretch;
+        align-self: stretch;
+padding-top: 3px;
+margin-right: 5px;
+margin-left: auto;
 }
 
 .box {
@@ -214,4 +226,3 @@ footer {
     background-color: yellow;
     height: 500px;
     width: 100%;
-}
