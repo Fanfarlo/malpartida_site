@@ -63,8 +63,12 @@ header {
 }
 
 .ham-btn {
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .ham-btn svg{
   width: 30px;
@@ -211,19 +215,33 @@ margin-left: 4px;
 }
 
 .lines{
+  transition: -webkit-transform 0.3s ease-in;
   transition: transform 0.3s ease-in;
-  transform-origin: 50% 50%;}
+  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;}
 
 .move-lines{
-  transform: rotate(90deg);
-  transform-origin: 50% 50%;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 .lines-close{
-  transform-origin: 50% 50%;
+  -webkit-transform-origin: 50% 50%;
+      -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
 }
 .move-lines-close{
+  transition: -webkit-transform .75s ease-in-out;
   transition: transform .75s ease-in-out;
-  transform: rotate(90deg);
+  transition: transform .75s ease-in-out, -webkit-transform .75s ease-in-out;
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 main {
@@ -235,3 +253,4 @@ footer {
     background-color: yellow;
     height: 500px;
     width: 100%;
+}
