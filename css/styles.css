@@ -79,13 +79,6 @@ header p {
     padding-right: 3px;
 }
 
-.ham-btn svg:hover {
-    background-color: rgba(255, 153, 0, 0.85);
-    border-radius: 50%;
-    border: 1.5px dashed #05386b;
-}
-
-
 /*------------------------navigation menu------------------*/
 
 nav {
@@ -119,7 +112,7 @@ nav.open {
 
 .drawer li {
     height: 50px;
-    border-bottom: 1px solid rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 .drawer a {
@@ -148,7 +141,7 @@ nav.open {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    border-bottom: 1px solid rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 .close-btn {
@@ -179,7 +172,7 @@ font-size: .8em;
         align-self: stretch;
 padding-top: 2px;
 margin-right: 15px;
-margin-left: 2px;
+margin-left: 4px;
 }
 
 .box {
@@ -217,6 +210,21 @@ margin-left: 2px;
     right:15px;
 }
 
+.lines{
+  transition: transform 0.3s ease-in;
+  transform-origin: 50% 50%;}
+
+.move-lines{
+  transform: rotate(90deg);
+  transform-origin: 50% 50%;
+}
+.lines-close{
+  transform-origin: 50% 50%;
+}
+.move-lines-close{
+  transition: transform .75s ease-in-out;
+  transform: rotate(90deg);
+}
 
 main {
     height: 500px;
