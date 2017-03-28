@@ -59,7 +59,7 @@ header {
 
 .logo {
     width: 64px;
-    margin-left: 5px;
+    margin-left: 15px;
 }
 
 .ham-btn {
@@ -68,7 +68,7 @@ header {
 }
 .ham-btn svg{
   width: 30px;
-  margin-right: 5px;
+  margin-right: 15px;
 }
 
 header p {
@@ -125,7 +125,7 @@ nav.open {
 .drawer a {
     display: block;
     color: #ff9900;
-    padding: 12px 0 12px 32px;
+    padding: 12px 0 12px 40px;
     width: 100%;
     height: 100%;
 }
@@ -158,7 +158,7 @@ nav.open {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 5px;
+  margin-left: 15px;
   margin-right: auto;
 
 }
@@ -166,7 +166,7 @@ nav.open {
 .text-btn {
   color: #05386b;
   font-weight: 700;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.2px;
   padding: 0 0 0 3px;
 font-size: .8em;
 }
@@ -178,7 +178,7 @@ font-size: .8em;
             -ms-grid-row-align: stretch;
         align-self: stretch;
 padding-top: 2px;
-margin-right: 5px;
+margin-right: 15px;
 margin-left: 2px;
 }
 
