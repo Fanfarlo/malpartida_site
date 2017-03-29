@@ -215,9 +215,9 @@ margin-left: 4px;
 }
 
 .lines{
-  transition: -webkit-transform 0.3s ease-in;
-  transition: transform 0.3s ease-in;
-  transition: transform 0.3s ease-in, -webkit-transform 0.3s ease-in;
+  transition: -webkit-transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out;
+  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   -webkit-transform-origin: 50% 50%;
       -ms-transform-origin: 50% 50%;
           transform-origin: 50% 50%;}
@@ -236,9 +236,9 @@ margin-left: 4px;
           transform-origin: 50% 50%;
 }
 .move-lines-close{
-  transition: -webkit-transform .75s ease-in-out;
-  transition: transform .75s ease-in-out;
-  transition: transform .75s ease-in-out, -webkit-transform .75s ease-in-out;
+  transition: -webkit-transform .72s ease-in-out;
+  transition: transform .72s ease-in-out;
+  transition: transform .72s ease-in-out, -webkit-transform .72s ease-in-out;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
