@@ -79,32 +79,36 @@
                       <span class="icon-check"><i class="fa fa-check"></i></span>Desarme</label>
                   </li>
               </ul>
+              <div class="container-date">
+                <div class="box-date">
+                  <label for="fecha">Fecha<input lang="es" type="date"  name="fecha" id="fecha"></label>
+                </div>
+                <div class="box-time">
+                  <label for="hora">Hora<input class="form-control" type="time" name="hora" id="hora"></label>
+                </div>
+              </div>
               </fieldset>
               <fieldset id="list">
                 <h2>Lista de Articulos</h2>
-                <p>Detalle todos los artículos a transportar</p>
-                <textarea name="art" rows="7"></textarea>
+                <p>Detallar todos los artículos a transportar</p>
+                <textarea name="art" rows="7" placeholder="-Juego de Sala 3-2-1, Refrigerador, Cocina, lavadora, Cama de 2 plazas, etc..."></textarea>
               </fieldset>
               <fieldset id="trayecto">
                 <h2>Trayecto</h2>
-                <p>Indique las ubicaciones donde se realizará el servicio de inicio a fin</p>
+                <p>Indicar las ubicaciones de principio a fin</p>
                   <label for="point">Inicio</label>
-                    <input type="text" name="point">
-                  <label for="nropiso">Piso Nro</label>
-                    <input type="number" name="nropiso" min="1" max="20" required>
-                  <p>Detallenos cuales son las caracteristicas relevantes del lugar</p>
-                  <textarea name="art" rows="3" placeholder="Condominio, prohibido uso del ascesor, escalera caracol, etc..."></textarea>
+                    <input type="text" placeholder="Jr. Bernardo Alcedo 470, Lince"name="point">
+                  <label>* Características del lugar</label>
+                  <textarea name="art" rows="3" placeholder="Piso 5, condominio, prohibido uso del ascesor, escalera amplia, etc..."></textarea>
 
                   <label for="point2">Destino</label>
-                    <input type="text" name="point2">
-                  <label for="nropiso2">Piso Nro</label>
-                    <input type="number" name="nropiso2" min="1" max="20" required>
-                  <p>Detallenos cuales son las caracteristicas relevantes del lugar</p>
-                  <textarea name="art" rows="2" placeholder="Condominio, prohibido uso del ascesor, escalera caracol, etc..."></textarea>
+                    <input type="text" placeholder="Av. Arequipa 3950, Miraflores" name="point2">
+                  <label>* Características del lugar</label>
+                  <textarea name="art" rows="3" placeholder="Piso 3, interior, escalera caracol, etc..."></textarea>
               </fieldset>
               <fieldset id="personal">
                 <h2>Información Personal</h2>
-                <p>Brindenos sus datos y nos comunicaremos con usted</p>
+                <p>Por favor facilitar sus datos de contacto</p>
                 <label for="name">Nombre</label>
                 <input type="text" name="nombre">
                 <label for="phone">Teléfono</label>
