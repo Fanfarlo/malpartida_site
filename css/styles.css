@@ -39,7 +39,9 @@ a {
     text-decoration: none;
 }
 
-
+ul{
+  list-style: none;
+}
 /*--------------------------header-------------------------*/
 
 header {
@@ -99,6 +101,7 @@ nav {
     transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
     background-color: white;
     font-family: "Roboto", sans-serif;
+    z-index: 10;
 }
 
 nav.open {
@@ -214,6 +217,8 @@ margin-left: 4px;
     right:15px;
 }
 
+/*buttons animation*/
+
 .lines{
   transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
@@ -243,14 +248,102 @@ margin-left: 4px;
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
+/*Form styles*/
+form{
+  margin: 12px;
+  height: auto;
+}
+
+form h1 {
+font-size: 2em;
+
+}
+form h2{
+  font-size: 1.2em;
+  margin: .8em 0;
+}
+
+
+
+/*checkboxes*/
+
+.checkboxes {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 20px;
+}
+
+.checkboxes li {
+    display: block;
+    padding: 0;
+    margin: 0 0 8px 0;
+}
+
+
+.checkboxes label {
+  font-size: 1.6em;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.checkboxes input{
+    display: none;
+    cursor: pointer;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-check {
+    color: rgb(92, 219, 149);
+    line-height: 1.1em;
+    margin: 0 .6em 0 .1em;
+    padding: 0em .15em;
+    background: white;
+    border-radius: 2px;
+    border: 1px solid rgba(52, 73, 94, 0.3);
+}
+
+.fa {
+    visibility: hidden;
+}
+
+.checkboxes input:checked+.icon-check .fa {
+    visibility: visible;
+}
+
+
+fieldset{
+  border:none;
+}
+.fieldsets{
+}
+
+
+input[type=text],
+input[type=email],
+input[type=password],
+input[type=tel],
+textarea{
+  display: block;
+  width: 100%;
+  border: 1px solid #ddd;
+  padding: 8px;
+  margin-bottom: 8px;
+}
 
 main {
-    height: 500px;
     width: 100%;
+    padding-top: 64px;
+
 }
 
 footer {
     background-color: yellow;
-    height: 500px;
+    height: 300px;
     width: 100%;
 }

@@ -8,8 +8,8 @@
     <meta name="keywords" content="camion, carga, embalajes, mudanzas, transportes">
     <meta name="description" content="Transportes y Mudanzas Malpartida es una empresa de carga, mudanzas y embalajes en el distrito de Lima">
     <title>Transportes y Mudanzas Malpartida</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
-
 </head>
 
 <body>
@@ -42,17 +42,80 @@
         <ul>
             <li><a href="#">Inicio<div class="next-btn"><svg viewBox="-240 42.8 477.2 477.2"><path d="M141.9 272.9L-61.4 69.6c-4.8-4.8-12.5-4.8-17.3 0-4.8 4.8-4.8 12.5 0 17.3L116 281.5-78.7 476.1c-4.8 4.8-4.8 12.5 0 17.3 2.3 2.3 5.5 3.6 8.6 3.6s6.2-1.2 8.6-3.6l203.3-203.3c4.8-4.7 4.8-12.5.1-17.2z"fill="#e4e4e4"stroke="#e4e4e4"stroke-width="45"stroke-miterlimit="10"/></svg></div></a></li>
             <li><a href="#">Servicios<div class="next-btn"><svg viewBox="-240 42.8 477.2 477.2"><path d="M141.9 272.9L-61.4 69.6c-4.8-4.8-12.5-4.8-17.3 0-4.8 4.8-4.8 12.5 0 17.3L116 281.5-78.7 476.1c-4.8 4.8-4.8 12.5 0 17.3 2.3 2.3 5.5 3.6 8.6 3.6s6.2-1.2 8.6-3.6l203.3-203.3c4.8-4.7 4.8-12.5.1-17.2z"fill="#e4e4e4"stroke="#e4e4e4"stroke-width="45"stroke-miterlimit="10"/></svg></div></a></li>
-            <li><a href="form.html">Cotizaciones<div class="next-btn"><svg viewBox="-240 42.8 477.2 477.2"><path d="M141.9 272.9L-61.4 69.6c-4.8-4.8-12.5-4.8-17.3 0-4.8 4.8-4.8 12.5 0 17.3L116 281.5-78.7 476.1c-4.8 4.8-4.8 12.5 0 17.3 2.3 2.3 5.5 3.6 8.6 3.6s6.2-1.2 8.6-3.6l203.3-203.3c4.8-4.7 4.8-12.5.1-17.2z"fill="#e4e4e4"stroke="#e4e4e4"stroke-width="45"stroke-miterlimit="10"/></svg></div></a></li>
+            <li><a href="#">Cotizaciones<div class="next-btn"><svg viewBox="-240 42.8 477.2 477.2"><path d="M141.9 272.9L-61.4 69.6c-4.8-4.8-12.5-4.8-17.3 0-4.8 4.8-4.8 12.5 0 17.3L116 281.5-78.7 476.1c-4.8 4.8-4.8 12.5 0 17.3 2.3 2.3 5.5 3.6 8.6 3.6s6.2-1.2 8.6-3.6l203.3-203.3c4.8-4.7 4.8-12.5.1-17.2z"fill="#e4e4e4"stroke="#e4e4e4"stroke-width="45"stroke-miterlimit="10"/></svg></div></a></li>
             <li><a href="#">Contacto<div class="next-btn"><svg viewBox="-240 42.8 477.2 477.2"><path d="M141.9 272.9L-61.4 69.6c-4.8-4.8-12.5-4.8-17.3 0-4.8 4.8-4.8 12.5 0 17.3L116 281.5-78.7 476.1c-4.8 4.8-4.8 12.5 0 17.3 2.3 2.3 5.5 3.6 8.6 3.6s6.2-1.2 8.6-3.6l203.3-203.3c4.8-4.7 4.8-12.5.1-17.2z"fill="#e4e4e4"stroke="#e4e4e4"stroke-width="45"stroke-miterlimit="10"/></svg></div></a></li>
         </ul>
     </nav>
     <main>
-        <div class="hero">
-        </div>
-        <div class="services">
-        </div>
-        <div class="budget">
-        </div>
+          <form method="post">
+            <h1>Cotización</h1>
+            <div class="fieldsets">
+              <fieldset id="service">
+                <h2>Servicios</h2>
+                <ul class="checkboxes">
+                  <li>
+                    <label for="trans">
+                      <input name="trans" id="trans" type="checkbox">
+                      <span class="icon-check"><i class="fa fa-check"></i></span>Transporte</label>
+                  </li>
+                  <li>
+                    <label for="cyd">
+                      <input name="cyd" id="cyd" type="checkbox">
+                      <span class="icon-check"><i class="fa fa-check"></i></span>Carga/Descarga</label>
+                  </li>
+                  <li>
+                    <label for="embje">
+                      <input name="embje" id="embje" type="checkbox">
+                      <span class="icon-check"><i class="fa fa-check"></i></span>Embalaje</label>
+                  </li>
+                  <li>
+                    <label for="mani">
+                      <input name="mani" id="mani" type="checkbox" value="Maniobra">
+                      <span class="icon-check"><i class="fa fa-check"></i></span>Maniobra</label>
+                  </li>
+                  <li>
+                    <label for="desar">
+                      <input name="desar" type="checkbox" id="desar" value="Desarme">
+                      <span class="icon-check"><i class="fa fa-check"></i></span>Desarme</label>
+                  </li>
+              </ul>
+              </fieldset>
+              <fieldset id="list">
+                <h2>Lista de Articulos</h2>
+                <p>Detalle todos los artículos a transportar</p>
+                <textarea name="art" rows="7"></textarea>
+              </fieldset>
+              <fieldset id="trayecto">
+                <h2>Trayecto</h2>
+                <p>Indique las ubicaciones donde se realizará el servicio de inicio a fin</p>
+                  <label for="point">Inicio</label>
+                    <input type="text" name="point">
+                  <label for="nropiso">Piso Nro</label>
+                    <input type="number" name="nropiso" min="1" max="20" required>
+                  <p>Detallenos cuales son las caracteristicas relevantes del lugar</p>
+                  <textarea name="art" rows="3" placeholder="Condominio, prohibido uso del ascesor, escalera caracol, etc..."></textarea>
+
+                  <label for="point2">Destino</label>
+                    <input type="text" name="point2">
+                  <label for="nropiso2">Piso Nro</label>
+                    <input type="number" name="nropiso2" min="1" max="20" required>
+                  <p>Detallenos cuales son las caracteristicas relevantes del lugar</p>
+                  <textarea name="art" rows="2" placeholder="Condominio, prohibido uso del ascesor, escalera caracol, etc..."></textarea>
+              </fieldset>
+              <fieldset id="personal">
+                <h2>Información Personal</h2>
+                <p>Brindenos sus datos y nos comunicaremos con usted</p>
+                <label for="name">Nombre</label>
+                <input type="text" name="nombre">
+                <label for="phone">Teléfono</label>
+                <input type="tel" name="phone">
+                <label for="mail">Email</label>
+                <input type="email" name="email">
+              </fieldset>
+              <a>next</a>
+              <input type="submit">
+            </div>
+          </form>
     </main>
     <footer>
         <div class="contact">
