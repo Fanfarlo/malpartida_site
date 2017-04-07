@@ -264,21 +264,21 @@ nav.open {
 form {
     margin: 12px;
     height: auto;
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 form h1 {
-    font-size: 2em;
+    font-size: 1.7em;
 }
 
 form h2 {
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: .5em 0;
 }
 
 form p {
     margin: 20px 0;
-    font-size: .8em;
+    font-size: .9em;
 }
 
 fieldset {
@@ -346,7 +346,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     margin: 10px 0 25px 0;
     font-size: 16px;
 }
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number]{
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], textarea{
   padding-left: 35px;
 }
 
@@ -377,7 +377,7 @@ margin-right: auto;
 
 .wraper .fa {
     position: absolute;
-    top: 10px;
+    top: 11px;
     left: 10px;
     color: #05386b;
 }
