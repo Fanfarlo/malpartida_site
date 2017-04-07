@@ -273,11 +273,12 @@ form h1 {
 
 form h2 {
     font-size: 1.5em;
-    margin: 1em 0;
+    margin: .5em 0;
 }
 
 form p {
     margin: 20px 0;
+    font-size: .8em;
 }
 
 fieldset {
@@ -342,10 +343,12 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
     width: 100%;
     padding: 10px;
     border: 1px solid rgba(52, 73, 94, 0.3);
-    margin: 8px 0 18px 0;
+    margin: 10px 0 25px 0;
     font-size: 16px;
 }
-
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number]{
+  padding-left: 35px;
+}
 
 /*date and time*/
 
@@ -372,10 +375,11 @@ margin-right: auto;
     position: relative;
 }
 
-.wraper .fa-user {
+.wraper .fa {
     position: absolute;
     top: 10px;
     left: 10px;
+    color: #05386b;
 }
 
 main {
