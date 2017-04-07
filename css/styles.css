@@ -38,9 +38,11 @@ a {
     text-decoration: none;
 }
 
-ul{
-  list-style: none;
+ul {
+    list-style: none;
 }
+
+
 /*--------------------------header-------------------------*/
 
 header {
@@ -69,12 +71,13 @@ header {
     display: -ms-flexbox;
     display: flex;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
-.ham-btn svg{
-  width: 30px;
-  margin-right: 15px;
+
+.ham-btn svg {
+    width: 30px;
+    margin-right: 15px;
 }
 
 header p {
@@ -84,6 +87,7 @@ header p {
     font-size: .9em;
     padding-right: 3px;
 }
+
 
 /*------------------------navigation menu------------------*/
 
@@ -107,8 +111,9 @@ nav {
 nav.open {
     -webkit-transform: translate(0, 0);
     -ms-transform: translate(0, 0);
-        transform: translate(0, 0);
+    transform: translate(0, 0);
 }
+
 
 /*-------navigation list-----*/
 
@@ -135,7 +140,9 @@ nav.open {
     background-color: #05386b;
 }
 
+
 /*--------Navigation header-------*/
+
 .nav-head {
     width: 100%;
     height: 64px;
@@ -143,43 +150,42 @@ nav.open {
     display: -ms-flexbox;
     display: flex;
     -webkit-justify-content: space-between;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-align-items: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-bottom: 1px solid rgb(235, 235, 235);
 }
 
 .close-btn {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 15px;
-  margin-right: auto;
-
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-left: 15px;
+    margin-right: auto;
 }
 
 .text-btn {
-  color: #05386b;
-  font-weight: 700;
-  letter-spacing: 1.2px;
-  padding: 0 0 0 3px;
-font-size: .8em;
+    color: #05386b;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    padding: 0 0 0 3px;
+    font-size: .8em;
 }
 
 .logo-nav {
-  width: 65px;
--webkit-align-self: stretch;
+    width: 65px;
+    -webkit-align-self: stretch;
     -ms-flex-item-align: stretch;
-            -ms-grid-row-align: stretch;
-        align-self: stretch;
-padding-top: 2px;
-margin-right: 15px;
-margin-left: 4px;
+    -ms-grid-row-align: stretch;
+    align-self: stretch;
+    padding-top: 2px;
+    margin-right: 15px;
+    margin-left: 4px;
 }
 
 .box {
@@ -190,7 +196,7 @@ margin-left: 4px;
     color: white;
     padding: 2px 0 2px 0;
     height: 20px;
-    width:85px;
+    width: 85px;
     border-radius: 3%;
 }
 
@@ -209,61 +215,74 @@ margin-left: 4px;
     background-color: #ff9900;
 }
 
-
 .next-btn {
     width: 13px;
     display: inline-block;
     position: absolute;
-    right:15px;
+    right: 15px;
 }
+
 
 /*buttons animation*/
 
-.lines{
-  transition: -webkit-transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out;
-  transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;}
+.lines {
+    transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
 
-.move-lines{
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+.move-lines {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 }
-.lines-close{
-  -webkit-transform-origin: 50% 50%;
-      -ms-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
+
+.lines-close {
+    -webkit-transform-origin: 50% 50%;
+    -ms-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
 }
-.move-lines-close{
-  transition: -webkit-transform .72s ease-in-out;
-  transition: transform .72s ease-in-out;
-  transition: transform .72s ease-in-out, -webkit-transform .72s ease-in-out;
-  -webkit-transform: rotate(90deg);
-      -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
+
+.move-lines-close {
+    transition: -webkit-transform .72s ease-in-out;
+    transition: transform .72s ease-in-out;
+    transition: transform .72s ease-in-out, -webkit-transform .72s ease-in-out;
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
 }
+
+
 /*Form styles*/
-form{
-  margin: 12px;
-  height: auto;
-  font-size: 1.1em;
+
+form {
+    margin: 12px;
+    height: auto;
+    font-size: 1.3em;
 }
 
 form h1 {
-font-size: 2em;
-
-}
-form h2{
-  font-size: 1.5em;
-  margin: 1em 0;
+    font-size: 2em;
 }
 
+form h2 {
+    font-size: 1.5em;
+    margin: 1em 0;
+}
+
+form p {
+    margin: 20px 0;
+}
+
+fieldset {
+    border: none;
+}
 
 
 /*checkboxes*/
@@ -282,16 +301,14 @@ form h2{
     margin: 0 0 8px 0;
 }
 
-
 .checkboxes label {
-    font-size: 1.1em;
     cursor: pointer;
     font-weight: normal;
     padding: 0;
     margin: 0;
 }
 
-.checkboxes input{
+.checkboxes input {
     display: none;
     cursor: pointer;
     font-weight: normal;
@@ -319,56 +336,51 @@ form h2{
 
 
 /*textbox*/
-form p {
-  margin: 20px 0;
+
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], input[type=date], input[type=time], textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(52, 73, 94, 0.3);
+    margin: 8px 0 18px 0;
+    font-size: 16px;
 }
 
 
-fieldset{
-  border:none;
-}
-.fieldsets{
+/*date and time*/
+
+.container-date {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
-
-input[type=text],
-input[type=email],
-input[type=password],
-input[type=tel],
-input[type=number],
-input[type=date],
-input[type=time],
-textarea{
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: 1px solid rgba(52, 73, 94, 0.3);
-  margin: 8px 0 18px 0;
-  font-size: 16px;
+.box-date {
+    width: 155px;
+    margin-right: 2%;
 }
 
-.container-date{
-  display: flex;
-  justify-content: space-between;
+.box-time {
+width: 120px;
+margin-right: auto;
 }
-.box-date{
-margin-right:6%;
+
+.wraper {
+    position: relative;
 }
-.box-time{
-  margin-right: auto;
+
+.wraper .fa-user {
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
-.wraper{
-  position: relative;
-}
-.wraper .fa-user{
-  position: absolute;
-  top:10px;
-  left: 10px;
-}
+
 main {
     width: 100%;
     padding-top: 64px;
-
 }
 
 footer {
