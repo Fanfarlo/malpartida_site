@@ -56,6 +56,7 @@ header {
     position: fixed;
     padding: 4px 0 0 0;
     box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+    z-index: 9;
 }
 
 .logo {
@@ -251,6 +252,7 @@ margin-left: 4px;
 form{
   margin: 12px;
   height: auto;
+  font-size: 1.1em;
 }
 
 form h1 {
@@ -307,7 +309,7 @@ form h2{
     border: 1px solid rgba(52, 73, 94, 0.3);
 }
 
-.fa {
+.checkboxes .fa {
     visibility: hidden;
 }
 
@@ -339,10 +341,10 @@ input[type=time],
 textarea{
   display: block;
   width: 100%;
-  padding: 8px;
+  padding: 10px;
   border: 1px solid rgba(52, 73, 94, 0.3);
   margin: 8px 0 18px 0;
-
+  font-size: 16px;
 }
 
 .container-date{
@@ -355,7 +357,14 @@ margin-right:6%;
 .box-time{
   margin-right: auto;
 }
-
+.wraper{
+  position: relative;
+}
+.wraper .fa-user{
+  position: absolute;
+  top:10px;
+  left: 10px;
+}
 main {
     width: 100%;
     padding-top: 64px;
