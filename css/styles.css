@@ -137,10 +137,11 @@ nav.open {
     transition: all .2s ease-in-out;
     color: inherit;
 }
+
 .nav-btns{
   color:#ff9900;
 }
-.nav-btns:hover, .nav-btns:focus{
+.btn-active{
     color: white;
     background-color: #05386b;
 }
