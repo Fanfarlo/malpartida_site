@@ -140,7 +140,7 @@ nav.open {
 .nav-btns{
   color:#ff9900;
 }
-.nav-btns:hover {
+.nav-btns:hover, .nav-btns:focus{
     color: white;
     background-color: #05386b;
 }
