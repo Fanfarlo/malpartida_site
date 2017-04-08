@@ -73,6 +73,7 @@ header {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .ham-btn svg {
@@ -169,6 +170,7 @@ nav.open {
     align-items: center;
     margin-left: 15px;
     margin-right: auto;
+    cursor: pointer;
 }
 
 .text-btn {
