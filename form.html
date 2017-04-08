@@ -147,7 +147,7 @@
         </div>
     </footer>
     <script src="js/jquery-3.2.0.min.js"></script>
-
+    <script src="js/modernizr-custom.js"></script>
     <script>
         /*
          * Open the drawer when the menu ison is clicked.
@@ -167,18 +167,6 @@
 
         displayMenu();
 
-        $('.nav-btns').on("touchstart", function (e) {
-      "use strict"; //satisfy the code inspectors
-      var link = $(this); //preselect the link
-      if (link.hasClass('btn-active')) {
-          return true;
-      } else {
-          link.addClass("btn-active");
-          $('.nav-btns').not(this).removeClass("btn-active");
-          e.preventDefault();
-          return false; //extra, and to make sure the function has consistent return points
-      }
-  });
     </script>
 
 </body>
