@@ -130,15 +130,17 @@ nav.open {
 
 .drawer a {
     display: block;
-    color: #ff9900;
     padding: 12px 0 12px 40px;
     width: 100%;
     height: 100%;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
+    color: inherit;
 }
-
-.drawer a:hover {
+.nav-btns{
+  color:#ff9900;
+}
+.nav-btns:hover {
     color: white;
     background-color: #05386b;
 }
