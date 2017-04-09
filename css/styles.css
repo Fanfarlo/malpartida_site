@@ -148,6 +148,10 @@ nav.open {
     background-color: #05386b;
 }
 
+.btn-active{
+  color: white;
+  background-color: #05386b;
+}
 
 
 /*--------Navigation header-------*/
