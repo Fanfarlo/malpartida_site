@@ -349,18 +349,23 @@ fieldset {
 
 /*textbox*/
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], input[type=date], input[type=time], textarea {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], input[type=date], input[type=time],textarea{
     display: block;
     width: 100%;
-    padding: 20px;
+    height: 60px;
+    padding: 20px 0 20px 35px;
     border: 1px solid rgba(52, 73, 94, 0.3);
     margin: 10px 0 25px 0;
     font-size: 16px;
 }
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], textarea{
-  padding-left: 35px;
+
+input[type=date], input[type=time]{
+  padding: 0 0 0 10px;
 }
 
+textarea{
+  height: auto;
+}
 /*date and time*/
 
 .container-date {
@@ -388,7 +393,7 @@ margin-right: auto;
 
 .wraper .fa {
     position: absolute;
-    top: 19px;
+    top: 20px;
     left: 10px;
     color: #05386b;
 }
