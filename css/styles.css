@@ -107,6 +107,7 @@ nav {
     background-color: white;
     font-family: "Roboto", sans-serif;
     z-index: 10;
+    color:#ff9900;
 }
 
 nav.open {
@@ -118,14 +119,17 @@ nav.open {
 
 /*-------navigation list-----*/
 
+
 .drawer ul {
     font-size: 1.2em;
     list-style: none;
+
 }
 
 .drawer li {
     height: 50px;
     border-bottom: 1px solid rgb(235, 235, 235);
+
 }
 
 .drawer a {
@@ -135,18 +139,16 @@ nav.open {
     height: 100%;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-    color: inherit;
+    color:inherit;
+
 }
 
-#nav-btns{
-  color:#ff9900;
-}
-
-.btn-active, .drawer a:hover{
+.drawer a:hover, .btn-active{
     color: white;
     background-color: #05386b;
 }
 
+.btn-color{color:white;}
 
 /*--------Navigation header-------*/
 
