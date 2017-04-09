@@ -157,7 +157,7 @@
         var displayMenu = function() {
 
           var buttonActive = $('form h1').text();
-          buttonActive = buttonActive[0]
+          buttonActive = buttonActive
 
             $('.ham-btn, .close-btn').click(function(event) {
 
@@ -169,32 +169,18 @@
                 })
               $('.ham-btn').ready(function(event){
 
-                if(buttonActive === "C"){
+                if(buttonActive === "Cotización"){
                   $('.drawer a').eq(2).toggleClass('btn-active')
 
             }})
         };
 
-        var displayActive = function() {
-          $('.drawer a').on("touchend", function (e) {
-              "use strict"; //satisfy the code inspectors
-              var link = $(this); //preselect the link
-              if (link.hasClass('btn-active')) {
-                  return true;
-              } else {
-                  link.addClass("btn-active");
-                  $('.drawer li').not(this).removeClass("btn-active");
-                  e.preventDefault();
-                  return false; //extra, and to make sure the function has consistent return points
-              }
-          });
-        };
+
 
 
 
 
         displayMenu();
-         displayActive();
 
     </script>
 

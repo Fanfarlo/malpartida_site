@@ -143,12 +143,12 @@ nav.open {
 
 }
 
-.drawer a:hover, .btn-active{
+.drawer a:hover, .drawer a:active{
     color: white;
     background-color: #05386b;
 }
 
-.btn-color{color:white;}
+
 
 /*--------Navigation header-------*/
 
