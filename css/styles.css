@@ -141,7 +141,8 @@ nav.open {
 .nav-btns{
   color:#ff9900;
 }
-.btn-active, .nav-btns:hover {
+
+.btn-active, .drawer a:hover{
     color: white;
     background-color: #05386b;
 }

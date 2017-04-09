@@ -147,23 +147,48 @@
         </div>
     </footer>
     <script src="js/jquery-3.2.0.min.js"></script>
-    <script src="js/modernizr-custom.js"></script>
     <script>
         /*
          * Open the drawer when the menu ison is clicked.
          */
 
+
+
         var displayMenu = function() {
+
+          var buttonActive = $('form h1').text();
+          buttonActive = buttonActive[0]
+
             $('.ham-btn, .close-btn').click(function(event) {
+
+
                 $('.drawer').toggleClass('open')
                 $('.lines').toggleClass('move-lines')
                 $('.lines-close').toggleClass('move-lines-close')
-            })
+                event.stopPropagation();
+                })
+              $('.ham-btn').ready(function(event){
+
+                if(buttonActive === "C"){
+                  $('.nav-btns li').eq(2).toggleClass('btn-active')
+                  
+            }})
         };
 
-        $(".nav-btns").on("tap",function(){
-  $(this).toggleClass('.btn-active');
-});
+        $('.drawer a').on("touchstart", function (e) {
+            "use strict"; //satisfy the code inspectors
+            var link = $(this); //preselect the link
+            if (link.hasClass('btn-active')) {
+                return true;
+            } else {
+                link.addClass("btn-active");
+                $('.drawer a').not(this).removeClass("btn-active");
+                e.preventDefault();
+                return false; //extra, and to make sure the function has consistent return points
+            }
+        });
+
+
 
         displayMenu();
 
