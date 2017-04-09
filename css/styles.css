@@ -374,17 +374,19 @@ input[type=text], input[type=email], input[type=password], input[type=tel]{
 textarea{
   height: auto;
   overflow-y: scroll;
-  padding: 10px 0 10px 35px;
+  padding: 16px 0 5px 35px;
 }
 
 input[type=submit]{
-  font-size: 1.1em;
-  padding: 15px 0;
-  width:100%;
+  font-size: 1em;
+  padding: 15px 30px;
+border-radius: 5px;
   color: white;
   background-color: #05386b;
   font-weight: 700;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
+  border: none;
+
 }
 /*date and time*/
 
