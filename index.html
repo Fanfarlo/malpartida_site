@@ -64,20 +64,35 @@
     </footer>
     <script src="js/jquery-3.2.0.min.js"></script>
     <script>
-        /*
-         * Open the drawer when the menu ison is clicked.
-         */
+    /*
+     * Open the drawer when the menu ison is clicked.
+     */
+    var displayMenu = function() {
 
-        var displayMenu = function() {
-            $('.ham-btn, .close-btn').click(function(event) {
-                $('.drawer').toggleClass('open')
-                $('.lines').toggleClass('move-lines')
-                $('.lines-close').toggleClass('move-lines-close')
-            })
-        };
+        var buttonActive = $('form h1').text();
+        buttonActive = buttonActive
 
-        displayMenu();
+        $('.ham-btn, .close-btn').click(function(event) {
+            $('.drawer').toggleClass('open')
+            $('.lines').toggleClass('move-lines')
+            $('.lines-close').toggleClass('move-lines-close')
+        })
 
+        $('.ham-btn').ready(function(event) {
+            if (buttonActive === "Cotización") {
+                $('.drawer li').eq(2).toggleClass('btn-active')
+            }
+        })
+    };
+
+    var removeActive = function() {
+        $('.drawer li').hover(function() {
+            $('.drawer li').eq(2).toggleClass('btn-active')
+        })
+    };
+
+    displayMenu();
+    removeActive();
     </script>
 
 </body>
