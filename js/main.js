@@ -11,21 +11,21 @@ var displayMenu = function() {
         $('.lines-close').toggleClass('move-lines-close')
     })
 
-    $('.ham-btn').ready(function() {
-        if (buttonActive === "Cotización") {
-            $('.drawer li').eq(2).toggleClass('btn-active')
-        }
-    })
+    // $('.ham-btn').ready(function() {
+    //     if (buttonActive === "Cotización") {
+    //         $('.drawer li').eq(2).toggleClass('btn-active')
+    //     }
+    // })
 };
 
-var removeActive = function() {
-    $('.drawer li').hover(function() {
-        $('.drawer li').eq(2).toggleClass('btn-active')
-    })
-};
+// var removeActive = function() {
+//     $('.drawer li').hover(function() {
+//         $('.drawer li').eq(2).toggleClass('btn-active')
+//     })
+// };
 
 displayMenu();
-removeActive();
+// removeActive();
 
 
 var mouseEvents = function(){
