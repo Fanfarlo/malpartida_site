@@ -139,7 +139,7 @@ nav.open {
     color: inherit;
 }
 
-.drawer a:hover, .drawer a:active {
+a.taphover:hover, a.taphover.hover {
     color: white;
     background-color: #05386b;
 }
@@ -265,9 +265,7 @@ nav.open {
     transform: rotate(90deg);
 }
 
-.nav-btns:hover{
-  background-color: #05386b;
-}
+
 /*Form styles*/
 
 form {
