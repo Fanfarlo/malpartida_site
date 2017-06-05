@@ -139,7 +139,7 @@ nav.open {
     color: inherit;
 }
 
-.drawer a:hover, .drawer a:active {
+.drawer a:hover {
     color: white;
     background-color: #05386b;
 }
