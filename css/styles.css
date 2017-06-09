@@ -277,9 +277,10 @@ a.taphover:hover, a.taphover.hover {
   background-size: cover;*/
 }
 #featured .item{
+  margin-top: -60px;
     padding: 0 20px;
   max-width: 100%;
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 60px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -316,7 +317,7 @@ a.taphover:hover, a.taphover.hover {
 
 
 .carousel-caption{
-  min-height: calc(100vh - 70px);
+  min-height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   justify-content: center;
