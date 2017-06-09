@@ -275,19 +275,15 @@ a.taphover:hover, a.taphover.hover {
 #featured {
   /*background: url("../img/center3.jpg") no-repeat 70% center;
   background-size: cover;*/
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  /*padding: 0 20px;*/
 }
 #featured .item{
+    padding: 0 20px;
   max-width: 100%;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh - 70px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    display: flex;
 }
 
 /**  Carousel Fade **/
@@ -319,8 +315,15 @@ a.taphover:hover, a.taphover.hover {
   opacity: 0;
 }
 
-/*
+.carousel-caption{
+position: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
 .phra-first{
+  justify-content: center;
   font-family: 'Share Tech', sans-serif;
   font-size: 1.8em;
   text-align: center;
@@ -328,8 +331,9 @@ a.taphover:hover, a.taphover.hover {
   margin: 0 auto 15px auto;
 }
 .btn-hero{
+  justify-content: center;
   margin: 0 0 15px 0;
-  padding: ;
+
   border-radius: 5px;
   height: 50px;
   background-color: #ff9900;
@@ -337,7 +341,10 @@ a.taphover:hover, a.taphover.hover {
   width: 100%;
   color: white;
   font-size: 1em;
-}*/
+}
+
+
+
 /*Form styles*/
 
 form {
