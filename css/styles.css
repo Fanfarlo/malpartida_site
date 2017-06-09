@@ -315,7 +315,7 @@ a.taphover:hover, a.taphover.hover {
 }*/
 
 .carousel-indicators{
-  bottom: 20%;
+  bottom: 15%;
 }
 .carousel-indicators li, .carousel-indicators .active{
   margin: 0 5px;
@@ -328,13 +328,25 @@ a.taphover:hover, a.taphover.hover {
   justify-content: center;
   align-items: center;
 }
-.phra-first{
-  font-family: 'Share Tech', sans-serif;
-  font-size: 1.8em;
+
+.phra { font-family: 'Share Tech', sans-serif;
+  font-size: 2em;
   text-align: center;
   color: white;
   margin: 0 auto 15px auto;
   justify-content: center;
+}
+
+
+.phra-2{
+padding: 0 7px;
+margin-bottom: 35px;
+}
+
+
+.orange{
+    background-color: #ff9900;
+    color: white;
 }
 
 .btn-hero{
@@ -342,10 +354,8 @@ a.taphover:hover, a.taphover.hover {
   z-index: 50;
   border-radius: 5px;
   height: 50px;
-  background-color: #ff9900;
   border: none;
   width: 100%;
-  color: white;
   font-size: 1em;
   text-shadow:none;
   display: flex;
