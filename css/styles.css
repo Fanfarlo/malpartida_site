@@ -317,6 +317,10 @@ a.taphover:hover, a.taphover.hover {
 .carousel-indicators{
   bottom: 20%;
 }
+.carousel-indicators li, .carousel-indicators .active{
+  margin: 0 5px;
+}
+
 .carousel-caption{
   min-height: calc(100vh - 60px);
   display: flex;
@@ -330,6 +334,7 @@ a.taphover:hover, a.taphover.hover {
   text-align: center;
   color: white;
   margin: 0 auto 15px auto;
+  justify-content: center;
 }
 
 .btn-hero{
