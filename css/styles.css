@@ -315,7 +315,7 @@ a.taphover:hover, a.taphover.hover {
 }*/
 
 .carousel-indicators{
-  bottom: 40px;
+  bottom: 80px;
 }
 .carousel-caption{
   min-height: calc(100vh - 60px);
