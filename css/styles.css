@@ -174,7 +174,7 @@ a.taphover:hover, a.taphover.hover {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-right: auto;
     cursor: pointer;
 }
@@ -183,7 +183,7 @@ a.taphover:hover, a.taphover.hover {
     color: #05386b;
     font-weight: 700;
     letter-spacing: 1.3px;
-    padding: 0 0 0 3px;
+    padding: 0 0 0 5px;
     font-size: 1em;
 }
 
@@ -206,22 +206,22 @@ a.taphover:hover, a.taphover.hover {
     color: white;
     padding: 2px 0 2px 0;
     height: 20px;
-    width: 85px;
+    width: 300px;
     border-radius: 3%;
 }
 
 .top {
-    margin: 0px 0 0 16px;
+
     background-color: #ff9900;
 }
 
 .middle {
-    margin: -2px 0 0 10px;
+
     background-color: #05386b;
 }
 
 .bottom {
-    margin: -2px 0 0 22px;
+
     background-color: #ff9900;
 }
 
@@ -232,7 +232,12 @@ a.taphover:hover, a.taphover.hover {
     right: 15px;
 }
 
-
+.nav-words{
+  height: 100%;
+  display: flex;
+margin: 0 10px;
+justify-content: space-between;
+}
 /*buttons animation*/
 
 .lines {
@@ -329,7 +334,8 @@ a.taphover:hover, a.taphover.hover {
   align-items: center;
 }
 
-.phra { font-family: 'Share Tech', sans-serif;
+.phra {
+  font-family: 'Share Tech', sans-serif;
   font-size: 2em;
   text-align: center;
   color: white;
@@ -363,8 +369,31 @@ margin-bottom: 35px;
   justify-content: center;
 }
 
+/*Services section styles*/
+.services{
+  display: flex;
+  flex-wrap: wrap;
 
+min-height: 100%;
+}
+.box-serv{
+margin: 30px 0;
+max-height: 100%;
+text-align: center;
+padding: 0 15px;
 
+}
+
+.box-serv svg{
+  width: 180px;
+  margin-bottom: 18px;
+}
+.box-serv p{
+  font-family: 'Share Tech', sans-serif;
+  line-height: 1.5;
+  font-size: 1.1em;
+  color: black;
+}
 /*Form styles*/
 
 form {
