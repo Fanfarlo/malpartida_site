@@ -383,7 +383,7 @@ margin-bottom: 35px;
 .services{
   display: flex;
   flex-wrap: wrap;
-
+justify-content: center;
 min-height: 100%;
 }
 .box-serv{
@@ -409,10 +409,24 @@ padding: 0 15px;
 
 /*nosotros styles*/
 .nosotros{
-  background: url("../img/moving.jpg") no-repeat center;
+  background: url("../img/moving1.jpg") no-repeat center;
   background-size: cover;
   height: calc(100vh);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.nosotros h1{
+  text-align: center;
+margin: 0 5px;
+  border: 3px solid white;
+  color: white;
+font-family: 'Share Tech', sans-serif;
+line-height: 40px;
+font-size: 30px;
+}
+
+
 /*Form styles*/
 
 form {
