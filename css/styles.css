@@ -17,7 +17,7 @@
 
 /*-----------------------general--------------------------------------*/
 
-*, p {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -28,11 +28,6 @@ img {
   max-width: 100%;
 }
 
-body {
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-}
 
 a {
   text-decoration: none;
@@ -40,6 +35,9 @@ a {
 
 ul {
   list-style: none;
+}
+p {
+  margin: 0;
 }
 
 
@@ -49,18 +47,21 @@ header {
   background-color: rgb(92, 219, 149);
   width: 100%;
   height: 64px;
+
+  position: fixed;
+  padding: 4px 0 0 0;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
+  z-index: 9;
+}
+.cont{
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-justify-content: space-between;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  position: fixed;
-  padding: 4px 0 0 0;
-  box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  z-index: 9;
-}
 
+}
 .logo {
   width: 64px;
   margin-left: 15px;
@@ -283,7 +284,7 @@ a.taphover:hover, a.taphover.hover {
 }
 
 #featured .item {
-  padding: 0 20px;
+  padding: 0px;
   max-width: 100%;
   min-height: calc(100vh - 60px);
   background-size: cover;
@@ -337,6 +338,7 @@ a.taphover:hover, a.taphover.hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 15px;
 }
 
 .phra {
@@ -359,7 +361,7 @@ a.taphover:hover, a.taphover.hover {
 }
 
 .btn-hero {
-  margin: 0 0 15px 0;
+  margin: 0 10px 15px 10px;
   z-index: 15;
   border-radius: 5px;
   height: 50px;
@@ -379,7 +381,8 @@ a.taphover:hover, a.taphover.hover {
   text-align: center;
   font-family: 'Share Tech', sans-serif;
   color: black;
-  margin: 40px 0 0 0;
+  margin: 0 0 40px 0;
+  width: 100%;
 }
 
 .services {
@@ -387,6 +390,7 @@ a.taphover:hover, a.taphover.hover {
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100%;
+  margin: 40px auto;
 }
 
 .box-serv {
@@ -397,7 +401,8 @@ a.taphover:hover, a.taphover.hover {
 }
 
 .box-serv svg {
-  width: 180px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 18px;
 }
 
@@ -618,6 +623,7 @@ main {
   color: black;
   margin-bottom: 20px;
   font-weight: 500;
+  width: 100%;
 }
 
 .contact h2 {
@@ -628,6 +634,7 @@ main {
 
 .contact p {
   font-family: 'Share Tech', sans-serif;
+  font-size: 1.1em;
 }
 
 
@@ -659,9 +666,15 @@ main {
   padding: 12px 0;
   justify-content: center;
 }
+.social h1{
+  color: #05386b;
+  font-size: 1.2em;
+margin: 0 8px 0 0;
+align-self: center;
+}
 .copyright{
   width: 100%;
-  padding: 0 15px;
+  padding: 2px 15px;
   background-color: #05386b;
   color: white;
   font-family: "Roboto", sans-serif;
@@ -680,10 +693,121 @@ main {
 }
 iframe {
   margin: 12px 0;
+  width: 100%;
 }
 
 footer {
   background-color: white;
   height: auto;
   width: 100%;
+}
+.nav-desk{
+  display: none;
+}
+
+.nav-desk li a{
+  margin: 0 5px;
+  color:  #05386b;
+  font-weight: bold;
+}
+
+
+
+@media screen and (min-width:767px) and (max-width:980px) {
+.ham-btn{
+  display: none
+}
+
+.cont{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.nav-desk{
+  display: flex;
+  align-items: center;
+}
+.carousel-caption{
+  width: 600px;
+  margin: 0 auto;
+}
+.box-serv{
+  width: 33.3%;
+}
+.services {
+  width: 600px;
+}
+.nosotros h1{
+  width: 600px;
+  margin: 0 auto;
+}
+.box-contact{
+  width: 33.3%;
+}
+.contact{
+  width: 600px;
+  margin: 0 auto;
+}
+}
+@media screen and (min-width:981px) {
+  .ham-btn{
+    display: none
+  }
+
+  .cont{
+    width: 980px;
+    margin: 0 auto;
+  }
+
+  .nav-desk{
+    display: flex;
+    align-items: center;
+  }
+  .carousel-caption{
+    width: 980px;
+    margin: 0 auto;
+  }
+  .btn-hero{
+    width: 35%;
+  }
+
+  .phra {
+    font-size: 52px;
+    line-height: 60px;
+}
+.box-serv{
+  width: 33.3%;
+}
+.box-serv p{
+
+}
+.services {
+  width: 980px;
+}
+.services h1{
+  font-size: 44px;
+}
+.box-serv svg {
+  width: 180px;
+  height: 180px;
+}
+.nosotros h1{
+  width: 980px;
+  margin: 0 auto;
+  font-size: 44px;
+  line-height: 55px;
+}
+.nosotros {
+  background-position: 50% 80%;
+  height: calc(60vh);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.box-contact{
+  width: 33.3%;
+}
+.contact{
+  width: 980px;
+  margin: 0 auto;
+}
 }
