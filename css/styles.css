@@ -22,6 +22,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
+
 }
 body{
   background-color:#f0f0f0;
@@ -358,24 +359,37 @@ a.taphover:hover, a.taphover.hover {
 }
 
 .orange {
-  background-color: #ff9900;
-  color: white;
+  background-color: white;
+  color: #ff9900;
+  border: 3px solid #ff9900;
 }
-
+.carousel-caption p{
+  font-family: 'Share Tech', sans-serif;
+}
+.carousel-caption a{
+  text-decoration: none;
+}
 .btn-hero {
   margin: 0 10px 15px 10px;
   z-index: 15;
-  border-radius: 5px;
+  font-family: 'Share Tech', sans-serif;
   height: 50px;
-  border: none;
+
   width: 100%;
-  font-size: 1.1em;
+  font-size: 1.3em;
   text-shadow: none;
   display: flex;
+  letter-spacing: 2px;
   align-items: center;
   justify-content: center;
-}
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
 
+}
+.btn-hero:hover{
+  background-color: #ff9900;
+  color: white;
+}
 
 /*Services section styles*/
 
@@ -383,7 +397,7 @@ a.taphover:hover, a.taphover.hover {
   text-align: center;
   font-family: 'Share Tech', sans-serif;
   color: black;
-  margin: 0 0 40px 0;
+  margin: 40px 0;
   width: 100%;
 }
 
@@ -614,7 +628,7 @@ main {
 .contact {
 
   font-family: 'Share Tech', sans-serif;
-  margin: 8px auto;
+  padding: 0 15px;
   color: black;
     background-color: white;
 }
@@ -759,6 +773,7 @@ footer {
   width: 100%;
   background-color: #05386b;
   height: 500px;
+    margin-bottom: 25px;
 }
 .serv-2{
   width: 100%;
@@ -796,20 +811,29 @@ footer {
   display: flex;
 }
 .serv-btn{
-
   width: 50%;
   display: flex;
   height: auto;
   padding: 28px 0 28px 0;
   background-color: #ff9900;
-  border: 1px solid white;
   align-items: center;
   justify-content: center;
+  border-top: 1px solid white;
 }
-.serv-btn a{
+.left{
+  border-right: 1px solid white;
+}
+
+.group-btns a{
   font-family: 'Share Tech', sans-serif;
   font-size: 1.1em;
   color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  opacity: 1;
+}
+.group-btns a:hover{
+  opacity: 0.5;
 }
 @media screen and (min-width:767px) and (max-width:980px) {
 .ham-btn{
@@ -858,6 +882,14 @@ footer {
 
   height: 100%;
 
+}
+.serv-1{
+  width: 50%;
+  border-right: 5px solid #f0f0f0;
+}
+.serv-2{
+  width:50%;
+    border-left: 5px solid #f0f0f0;
 }
 
 iframe {
@@ -924,7 +956,7 @@ display:flex;
 }
 .contact{
   width: 980px;
-
+  margin: 0 auto;
 }
 .contact h1{
   font-size: 44px;
@@ -940,9 +972,12 @@ display:flex;
 }
 .serv-1{
   width: 50%;
+  border-right: 10px solid #f0f0f0;
+
 }
 .serv-2{
   width:50%;
+    border-left: 10px solid #f0f0f0;
 }
 
 }
