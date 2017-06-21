@@ -23,7 +23,9 @@
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
-
+body{
+  background-color:#f0f0f0;
+}
 img {
   max-width: 100%;
 }
@@ -51,7 +53,7 @@ header {
   position: fixed;
   padding: 4px 0 0 0;
   box-shadow: 0 1px 8px rgba(0, 0, 0, .3);
-  z-index: 9;
+  z-index: 17;
 }
 .cont{
   display: -webkit-flex;
@@ -390,7 +392,9 @@ a.taphover:hover, a.taphover.hover {
   flex-wrap: wrap;
   justify-content: center;
   min-height: 100%;
-  margin: 40px auto;
+  margin: 25px auto;
+  background-color: white;
+  padding: 20px 0;
 }
 
 .box-serv {
@@ -608,20 +612,21 @@ main {
 }
 
 .contact {
-  /*color: #05386b;*/
+
   font-family: 'Share Tech', sans-serif;
-  margin: 0 15px;
+  margin: 8px auto;
   color: black;
+    background-color: white;
 }
 
 .contact h1 {
   font-family: 'Share Tech', sans-serif;
   text-align: center;
   letter-spacing: 7px;
-  padding: 40px 0 0 0;
+  padding: 40px 0;
   font-size: 40px;
   color: black;
-  margin-bottom: 20px;
+  margin: 0 auto;
   font-weight: 500;
   width: 100%;
 }
@@ -692,12 +697,13 @@ align-self: center;
   text-align: center;
 }
 iframe {
-  margin: 12px 0;
-  width: 100%;
+margin: 8px auto;
+width: 100%;
+
 }
 
 footer {
-  background-color: white;
+  background-color:white;
   height: auto;
   width: 100%;
 }
@@ -709,18 +715,116 @@ footer {
   margin: 0 5px;
   color:  #05386b;
   font-weight: bold;
+  font-size: 1.1em;
+  text-decoration: none;
 }
 
+.nav-desk li a:hover{
+  color: white;
+}
 
+/*servicios*/
+.servicios{
+  margin: 25px auto;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 
+}
+.servicios svg{
+  height: 100px;
+  margin: 40px 0 -9px 25px;
+}
+.servicios h1{
+  padding: 5px;
+  border: 3px solid white;
+  font-size: 40px;
+  color: white;
+  margin: 0 0 18px 12px;
+  width: 190px;
+  font-family: 'Share Tech', sans-serif;
+  text-align: center;
+}
+.serv-word{
+  color: #05386b;
+  background-color:white;
+  font-size: 1.9em;
+  padding: 2px 0 0 8px;
+  margin: 15px 15px 0 15px;
+  font-family: 'Share Tech', sans-serif;
+
+}
+.serv-1{
+  width: 100%;
+  background-color: #05386b;
+  height: 500px;
+}
+.serv-2{
+  width: 100%;
+  height: 500px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.more-info{
+  background: url("../img/try1.jpg") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+.info-text{
+  color:black;
+  margin: 80px 0 20px 15px;
+  font-size: 1.5em;
+  font-family: 'Share Tech', sans-serif;
+}
+.serv-num{
+  padding: 25px;
+  color: #ff9900;
+  background-color: white;
+  width: 200px;
+  font-size: 1.9em;
+  margin: 0 0 0 15px;
+  text-align: center;
+}
+.serv-num p{
+  margin: 5px 0;
+}
+.group-btns{
+  width: 100%;
+  display: flex;
+}
+.serv-btn{
+
+  width: 50%;
+  display: flex;
+  height: auto;
+  padding: 28px 0 28px 0;
+  background-color: #ff9900;
+  border: 1px solid white;
+  align-items: center;
+  justify-content: center;
+}
+.serv-btn a{
+  font-family: 'Share Tech', sans-serif;
+  font-size: 1.1em;
+  color: white;
+}
 @media screen and (min-width:767px) and (max-width:980px) {
 .ham-btn{
   display: none
 }
 
 .cont{
-  width: 600px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+.logo {
+  margin-left: 0px;
+}
+.btn-hero{
+  width: 35%;
 }
 
 .nav-desk{
@@ -728,25 +832,37 @@ footer {
   align-items: center;
 }
 .carousel-caption{
-  width: 600px;
+  /*width: 780px;*/
   margin: 0 auto;
+  padding: 0 15px;
 }
 .box-serv{
   width: 33.3%;
 }
 .services {
-  width: 600px;
+
+}
+.nosotros {
+  background-position: 50% 80%;
+  height: calc(60vh);
+  background-size: cover;
+  background-attachment: fixed;
 }
 .nosotros h1{
-  width: 600px;
-  margin: 0 auto;
+ padding: 0 15px;
 }
 .box-contact{
   width: 33.3%;
 }
 .contact{
-  width: 600px;
-  margin: 0 auto;
+
+  height: 100%;
+
+}
+
+iframe {
+width: 100%;
+display:flex;
 }
 }
 @media screen and (min-width:981px) {
@@ -808,6 +924,25 @@ footer {
 }
 .contact{
   width: 980px;
-  margin: 0 auto;
+
 }
+.contact h1{
+  font-size: 44px;
+}
+
+.logo {
+
+  margin-left: 0px;
+}
+.servicios{
+  width: 980px;
+
+}
+.serv-1{
+  width: 50%;
+}
+.serv-2{
+  width:50%;
+}
+
 }
