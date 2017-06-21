@@ -21,7 +21,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Share Tech', sans-serif;
 
 }
 body{
@@ -87,10 +87,11 @@ header {
 
 header p {
   color: #05386b;
-  font-weight: 700;
-  letter-spacing: 1.3px;
-  font-size: 1em;
-  padding-right: 3px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1.1em;
+  padding-right: 2px;
+  font-family: 'Share Tech', sans-serif;
 }
 
 
@@ -130,6 +131,7 @@ nav.open {
 .drawer ul {
   font-size: 1.2em;
   list-style: none;
+  letter-spacing: 2px;
 }
 
 .drawer li {
@@ -653,7 +655,7 @@ main {
 
 .contact p {
   font-family: 'Share Tech', sans-serif;
-  font-size: 1.1em;
+  font-size: 1.2em;
 }
 
 
@@ -693,12 +695,13 @@ align-self: center;
 }
 .copyright{
   width: 100%;
-  padding: 2px 15px;
+  padding: 3px 15px;
   background-color: #05386b;
   color: white;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 0.9em;
+text-align: center;
 }
 .box-contact{
   width: 100%;
@@ -729,9 +732,11 @@ footer {
 .nav-desk li a{
   margin: 0 5px;
   color:  #05386b;
-  font-weight: bold;
+  font-family: 'Share Tech', sans-serif;
   font-size: 1.1em;
-  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .nav-desk li a:hover{
