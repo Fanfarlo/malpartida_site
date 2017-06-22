@@ -459,15 +459,19 @@ a.taphover:hover, a.taphover.hover {
 /*Form styles*/
 
 form {
-  margin: 12px;
+  margin: 0 15px;
   height: auto;
   font-size: 1.2em;
   color: #05386b;
+  background: white;
+  padding: 0 15px 30px 15px;
 }
 
 form h1 {
-  font-size: 1.7em;
+  font-size: 40px;
   letter-spacing: 3px;
+  margin: 0;
+  padding: 30px 0 20px 0;
 }
 
 form h2 {
@@ -543,7 +547,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   width: 100%;
   border: 1px solid #05386b;
   margin: 10px 0 25px 0;
-  font-size: 17px;
+  font-size: 14px;
 }
 
 input[type=date], input[type=time] {
@@ -557,7 +561,7 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
 textarea {
   height: auto;
   overflow-y: scroll;
-  padding: 16px 0 5px 35px;
+  padding: 16px 8px 5px 35px;
 }
 
 input[type=submit] {
@@ -571,11 +575,14 @@ input[type=submit] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  padding: 0 9px 2px 0;
+  letter-spacing: 2px;
   width: 100%;
   margin-right: auto;
+  transition: all 0.3s ease-in-out;
 }
-
+input[type=submit]:hover{
+  opacity: 0.7;
+}
 
 /*date and time*/
 
@@ -613,13 +620,12 @@ input[type=submit] {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  max-width: 45%;
+  max-width: 50%;
+  margin: 0 auto;
 }
 
 .send-btn {
-  width: 20px;
-  margin-left: -40px;
-  margin-right: auto;
+
 }
 
 main {
@@ -902,7 +908,9 @@ iframe {
 width: 100%;
 display:flex;
 }
+
 }
+
 @media screen and (min-width:981px) {
   .ham-btn{
     display: none
@@ -985,5 +993,9 @@ display:flex;
   width:50%;
     border-left: 10px solid #f0f0f0;
 }
+form{
+  width: 980px;
+  margin: 0 auto;
 
+}
 }

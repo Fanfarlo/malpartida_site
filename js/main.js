@@ -3,7 +3,7 @@
  */
 var displayMenu = function() {
 
-    var buttonActive = $('form h1').text();
+
 
     $('.ham-btn, .close-btn').click(function() {
         $('.drawer').toggleClass('open')
@@ -11,6 +11,10 @@ var displayMenu = function() {
         $('.lines-close').toggleClass('move-lines-close')
     })
 
+    $('.drawer a').click(function(){
+      $('.drawer').toggleClass('open')
+      $('.lines').toggleClass('move-lines')
+    })
     // $('.ham-btn').ready(function() {
     //     if (buttonActive === "Cotización") {
     //         $('.drawer li').eq(2).toggleClass('btn-active')
