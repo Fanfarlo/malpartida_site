@@ -302,9 +302,18 @@ a.taphover:hover, a.taphover.hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+
 }
 
-
+#featured .hero1{
+  background-image: url("../img/hero1-600.jpg");
+}
+#featured .hero2{
+  background-image: url("../img/hero2-700.jpg");
+}
+#featured .hero3{
+  background-image: url("../img/hero3-600.jpg");
+}
 /**  Carousel Fade **/
 
 
@@ -656,7 +665,7 @@ input[type=submit]:hover {
 
 .wraper .fa {
   position: absolute;
-  top: 20px;
+  top: 22px;
   left: 10px;
   color: #ff9900;
 }
@@ -891,7 +900,7 @@ footer {
 }
 
 .more-info {
-  background: url("../img/try1.jpg") no-repeat center;
+  background: url("../img/try15.jpg") no-repeat center;
   background-size: cover;
   height: 100%;
 }
@@ -991,6 +1000,7 @@ form{
     margin: 0 auto;
     padding: 0 15px;
   }
+
   .box-serv {
     width: 33.3%;
   }
@@ -1027,6 +1037,16 @@ form{
   .submit-container {
     max-width: 30%;
   }
+  #featured .hero1{
+    background-image: url("../img/hero1.jpg");
+  }
+  #featured .hero2{
+    background-image: url("../img/hero2.jpg");
+  }
+  #featured .hero3{
+    background-image: url("../img/hero3.jpg");
+  }
+
 }
 
 @media screen and (min-width:981px) {
@@ -1122,5 +1142,14 @@ form{
 
   .submit-container {
     max-width: 30%;
+  }
+  #featured .hero1{
+    background-image: url("../img/hero1.jpg");
+  }
+  #featured .hero2{
+    background-image: url("../img/hero2.jpg");
+  }
+  #featured .hero3{
+    background-image: url("../img/hero3.jpg");
   }
 }
