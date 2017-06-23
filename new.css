@@ -1,0 +1,167 @@
+@charset "utf-8";@font-face{font-family:'Roboto';font-style:normal;font-weight:400;src:local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v15/CWB0XYA8bzo0kSThX0UTuA.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:700;src:local('Roboto Bold'), local('Roboto-Bold'), url(https://fonts.gstatic.com/s/roboto/v15/d-6IYplOFocCacKzxwXSOFtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face{font-family:'Roboto';font-style:normal;font-weight:900;src:local('Roboto Black'), local('Roboto-Black'), url(https://fonts.gstatic.com/s/roboto/v15/mnpfi9pxYH-Go5UiibESIltXRa8TVwTICgirnJhmVJw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:400;src:local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:600;src:local('Open Sans Semibold'), local('OpenSans-Semibold'), url(https://fonts.gstatic.com/s/opensans/v13/MTP_ySUJH_bn48VBG8sNSugdm0LZdjqr5-oayXSOefg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+@font-face{font-family:'Open Sans';font-style:normal;font-weight:700;src:local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v13/k3k702ZOKiLJc3WVjuplzOgdm0LZdjqr5-oayXSOefg.woff2) format('woff2');unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;}
+body{color:#002A4A;line-height:1.5;font-family:"roboto", sans-serif;background-color:rgba(157, 189, 198, 0.1);position:relative;}
+ul{list-style:none;padding:0;margin:0;}
+li{display:inline-block;}
+h1, h2, h3{font-family:"open sans", sans-serif;}
+#servicios h1, #contacto h1, #presupuesto h1{text-align:center;padding-bottom:50px;padding-top:50px;font-weight:700;letter-spacing:6px;font-size:50px;}
+.page-inicio{padding-top:125px;}
+.pages{padding-top:100px;}
+#nosotros .container, #servicios .container, #presupuesto .container, #contacto .container, #replyform .container{background-color:white;}
+#replyform .row{padding-top:40px;font-size:1.4em;}
+#replyform h1{font-size:3em;margin-top:30px;margin-bottom:20px;}
+#replyform li{display:block;font-weight:bold;}
+#replyform i{display:block;font-size:12em;padding-left:45px;padding-top:50px;padding-bottom:50px;color:#FF2D00;}
+.reply-line{background-color:#002A4A;height:12px;margin-top:55px;}
+header .navbar{color:#05386b;padding-top:10px;padding-right:0;padding-left:0;font-size:1.2em;font-family:"open sans";font-weight:700;padding-bottom:0px;background-color:rgb(92, 219, 149);border:none;}
+.navbar-nav{padding-top:45px;}
+.navbar-nav li{margin:0px;padding:0 10px;}
+.navbar-nav li a{color:#05386b;margin:0px;padding:0px;-webkit-transition:all 0.2s;transition:all 0.2s;}
+.navbar-nav li a:hover{color:#fff;padding:0;margin:0;}
+.navbar-nav a span{font-size:.9em;padding-left:4px;}
+.navbar-nav>.active>a, .navbar-nav>.active>a:focus, .navbar-nav>.active>a:hover{color:#fff;border-bottom:4px solid #05386b;background-color:transparent;}
+.dropdown-menu{color:#05386b;font:inherit;background-color:rgb(92, 219, 149);border:none;}
+.dropdown-menu li a{display:inline;font:inherit;}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover{color:#fff;border-bottom:4px solid #05386b;background-color:transparent;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover{color:white;-webkit-transition:all 0.2s;transition:all 0.2s;}
+.nav-contact{background-color:#05386b;font-weight:500;}
+.nav-contact .container{padding-right:10px;}
+.nav-contact ul{font-family:"roboto";font-size:.8em;float:right;color:white;margin-bottom:0;font-weight:700;}
+.nav-contact li{padding-left:.2em;}
+.nav-contact a{color:white;-webkit-transition:all 0.2s;transition:all 0.2s;}
+.nav-contact a:hover{color:#ff9900;font-weight:700;}
+li .fa-phone, li .fa-envelope-o{padding-right:.3em;}
+.navbar-default .navbar-toggle{background-color:#05386b;border-color:#05386b;}
+.navbar-default .navbar-toggle:hover{background-color:#ff9900;border-color:#ff9900;}
+.navbar-default .navbar-toggle .icon-bar{background-color:#5CDB95;}
+.navbar-default .navbar-toggle .icon-bar:hover{background-color:#5CDB95;}
+#nosotros .container{background:url("../images/img-inicio.jpg") no-repeat;background-size:100% 100%;}
+.nosotros-content{font-family:"open-sans", sans-serif;font-weight:700;font-size:1.9em;color:white;margin-top:80px;margin-bottom:80px;background-color:rgba(255, 255, 255, 0.2);text-align:left;word-spacing:6px;padding-top:5px;padding-bottom:5px;}
+.nosotros-content p{margin-bottom:0;}
+.nosotros-words{padding-top:20px;}
+.nosotros-words p{font-size:2em;margin-bottom:13px;margin-top:13px;text-align:center;font-weight:900;padding:10px;color:white;}
+.blue{background-color:#05386b;}
+.orange{background-color:#ff9900}
+.box{text-align:center;color:#fff;font-size:1.2em;border-radius:1%;background-color:#1E4563;-webkit-transition:all .2s ease-out;transition:all .2s ease-out;box-shadow:0 4px 8px 2px hsla(0, 0%, 70%, .6);height:auto;padding:1.5em;display:block;}
+.box h2{font-weight:bold;padding:15px 0;}
+.box i{box-shadow:inset 0 -1px 1px rgba(0, 0, 0, 0.9);background-color:#FF2D00;padding:.14em;border-radius:5%;font-size:3.5em;color:white;}
+.box:link, .box:visited, .box:hover, .box:active{-webkit-transform:scale(1.1);transform:scale(1.1);color:white;}
+#presupuesto{font-family:'open sans', sans-serif;font-size:1.3em;}
+#presupuesto .row h2{display:block;background-color:#1E4563;font-weight:bold;padding:30px 0;margin-left:-16px;margin-right:-16px;margin-top:0;margin-bottom:25px;font-size:1.4em;width:auto;text-align:center;color:white;border-radius:1px;}
+#presupuesto .pre-back{background-color:rgba(157, 189, 198, 0.1);border-radius:2px;border:1px solid rgba(157, 189, 198, 0.1);}
+#presupuesto .form-control{padding-right:10px;padding-left:34px;vertical-align:middle;}
+#presupuesto .piso-content .form-control{padding-left:5px;}
+#presupuesto i{padding-top:21px;left:17px;}
+#personal-info i{left:0px;}
+#presupuesto .fa{display:inline-block;top:32px;}
+#presupuesto h3{color:#002A4A;font-weight:700;border-bottom:4px solid #002A4A;}
+#presupuesto .textarea-style .form-control{padding-left:8px;border-radius:1px;}
+#personal-info{margin-bottom:1em;}
+#partida h3, #llegada h3{margin-bottom:20px;}
+.icon-email .glyphicon-remove:before, .icon-email .glyphicon-ok:before{content:"\2709";}
+.icon-user .glyphicon-remove:before, .icon-user .glyphicon-ok:before{content:"\e008";}
+#presupuesto-malpartida .has-success .form-control-feedback{color:rgb(92, 219, 149);}
+#presupuesto-malpartida .has-success .form-control{border-color:rgb(92, 219, 149);}
+#presupuesto-malpartida .has-error .form-control-feedback, #presupuesto-malpartida .has-error .help-block{color:#FF2D00;}
+#presupuesto-malpartida .has-error .help-block{font-size:.7em;}
+#presupuesto-malpartida .has-error .form-control{border-color:#FF2D00;}
+label{font-weight:600;padding:4px 0;}
+input[type="text"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="date"], input[type="time"], select{border:1px solid rgba(52, 73, 94, 0.2);border-radius:1px;height:50px;vertical-align:middle;background-color:white;font-size:.9em;}
+textarea{width:inherit;font-size:.9em;border:1px solid rgba(52, 73, 94, 0.2);padding-left:5px;}
+input[type="submit"]{font-family:inherit;background-color:#1E4563;padding:13px 0px;border-radius:4px;font-weight:bold;width:100%;color:white;border:none;margin:20px 0 30px 0;}
+input[type="submit"]:hover{background-color:#FF2D00;}
+.checkboxes{-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;margin-bottom:20px;}
+.checkboxes li{display:block;padding:0;margin:0;}
+.checkboxes label{cursor:pointer;font-weight:normal;padding:0;margin:0;}
+.checkboxes input{display:none;cursor:pointer;font-weight:normal;padding:0;margin:0;}
+.checkboxes .icon-check{font-size:1em;color:rgb(92, 219, 149);line-height:1.1em;text-align:center;margin:0 .9em 0 .1em;padding:0 .15em;background:white;border-radius:2px;border:1px solid rgba(52, 73, 94, 0.3);height:1em;width:1em;}
+.checkboxes .icon-check .fa{visibility:hidden;}
+.checkboxes input:checked+.icon-check .fa{visibility:visible;}
+.checkboxes input{display:inline\9;}
+.checkboxes .icon-check{display:none\9;}
+#contacto .page{padding-bottom:0;}
+#contacto .row{padding-bottom:40px;}
+#contacto article{font-size:1.3em;text-align:center;}
+#contacto article span{margin-top:20px;}
+#contacto h2{font-size:1.4em;font-weight:600;padding:12px 0;}
+.fa-border{border:none;background-color:#FF2D00;color:white;}
+iframe{width:100%;}
+#pie{background-color:#05386b;}
+#pie p{color:white;margin:6px 0;font-size:.9em;font-weight:700;}
+.social-bot{background-color:rgb(92, 219, 149);padding:20px 0;text-align:center;}
+.facebook-bot, .google-bot{padding:0 .2em;margin:0 0 0 0px;font-size:1.5em;}
+.facebook-bot a, .google-bot a{color:#05386b;}
+.fa-border-bot{text-align:center;border:solid .09em #05386b;border-radius:50%;line-height:60px;width:60px;height:60px;-webkit-transition:all .2s ease-in-out;transition:all .2s ease-in-out;}
+.fa-border-bot:hover{background-color:#05386b;color:#ECF0F1;}
+@media (max-width:374px){.logotipo{margin-left:15px;}
+.navbar-nav{padding-top:0px;}
+.navbar-nav li{margin:0px;padding:0 5px;font-size:.9em;}
+.navbar-nav li a{-webkit-transition:none;transition:none;}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{padding:0px 5px;font-size:.9em;color:#05386b;-webkit-transition:none;transition:none;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{color:#fff;background-color:#ff9900;}
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{color:#fff;background-color:#ff9900;}
+#servicios h1, #contacto h1{font-size:2.8em;}
+#replyform i{padding:0 0 10px 50px;font-size:7em;}
+.reply-line{margin-top:30px;}
+#replyform{font-size:.9em;}
+#nosotros .container{background:url("../images/newmob.jpg") no-repeat center center;background-size:cover;}
+.nosotros-content{font-size:1.4em;margin-top:15px;margin-bottom:0;text-align:left;word-spacing:0px;}
+.nosotros-words{padding-top:40px;}
+.nosotros-words p{margin-bottom:3px;margin-top:3px;padding:3px;font-size:1.4em;}
+.box{height:auto;padding:1.5em;margin-bottom:15px;border-radius:8px;}
+.box-disabled{pointer-events:none;}
+.hora-fecha i{display:none;}
+#presupuesto .hora-fecha .form-control{padding-left:5px;}
+#presupuesto h1{font-size:1.9em;}
+#presupuesto .form-control{padding-right:0px;}
+.contac-presu{font-size:.8em;}
+}
+@media (min-width:375px) and (max-width:413px){.logotipo{margin-left:15px;}
+.navbar-nav{padding-top:0px;}
+.navbar-nav li a{-webkit-transition:none;transition:none;}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{padding:0px 5px;font-size:.9em;color:#05386b;-webkit-transition:none;transition:none;}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{color:white;background-color:#ff9900;padding:0px 5px;}
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{color:#fff;background-color:#ff9900;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{color:#fff;border-bottom:;background-color:#ff9900;}
+#servicios h1, #contacto h1, #presupuesto h1{font-size:3em;}
+#replyform i{padding:10px 0 12px 65px;font-size:9em;}
+.reply-line{margin-top:35px;}
+#nosotros .container{background:url("../images/newmob.jpg") no-repeat center center;background-size:cover;}
+.nosotros-content{font-size:1.6em;margin-top:15px;margin-bottom:0;text-align:left;word-spacing:0px;}
+.nosotros-words{padding-top:40px;}
+.nosotros-words p{margin-bottom:4px;margin-top:4px;padding:3px;}
+.box{height:auto;padding:1.5em;margin-bottom:15px;border-radius:8px;}
+.box-disabled{pointer-events:none;}
+.hora-fecha i{display:none;}
+#presupuesto .hora-fecha .form-control{padding-left:5px;}
+#presupuesto .form-control{padding-right:5px;}
+#presupuesto h1{font-size:2.2em;}
+}
+@media (min-width:414px) and (max-width:767px){.logotipo{margin-left:15px;}
+.navbar-nav{padding-top:0px;}
+.navbar-nav li a{-webkit-transition:none;transition:none;}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{padding:0 5px;-webkit-transition:none;transition:none;color:#05386b;}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover{padding:0 5px;color:white;border-bottom:4px solid #05386b;background-color:#ff9900;}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{color:#fff;background-color:#ff9900;}
+.navbar-default .navbar-nav .open .dropdown-menu>.active>a, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>.active>a:hover{color:#fff;background-color:#ff9900;}
+#servicios h1, #contacto h1, #presupuesto h1{font-size:3em;}
+#replyform i{padding:0px 0px 20px 65px;font-size:10em;}
+#nosotros .container{background:url("../images/new.jpg") no-repeat center center;background-size:cover;}
+.nosotros-content{font-size:1.7em;margin-top:15px;margin-bottom:0;text-align:left;word-spacing:0px;}
+.nosotros-words p{margin-bottom:4px;margin-top:4px;padding:3px;}
+.box{height:auto;padding:1.5em;margin-bottom:15px;border-radius:8px;}
+.box-disabled{pointer-events:none;}
+.hora-fecha i{display:none;}
+#presupuesto .hora-fecha .form-control{padding-left:5px;}
+#presupuesto h1{font-size:2.5em;}
+}
+@media (min-width:768px) and (max-width:1024px){.nosotros-content{font-size:1.7em;margin-top:20px;margin-bottom:40px;word-spacing:5px;}
+.nosotros-words p{font-size:2em;margin-bottom:5px;margin-top:5px;padding:5px;}
+.box{height:auto;padding:1.5em;margin-bottom:15px;border-radius:8px;}
+.box-disabled{pointer-events:none;}
+#replyform i{display:block;font-size:10em;padding-top:50px;padding-bottom:50px;padding-left:14px;color:#FF2D00;}
+}
