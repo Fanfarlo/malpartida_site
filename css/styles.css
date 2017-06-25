@@ -626,7 +626,8 @@ input[type=text], input[type=email], input[type=password], input[type=tel] {
 
 input[type=date], input[type=time] {
   padding: 10px;
-  width: 94%;
+  width: 100%;
+  display: block;
   border: 1px solid #05386b;
   margin: 10px 0 25px 0;
 }
@@ -685,6 +686,8 @@ input[type=submit]:hover {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   justify-content: space-between;
+}
+.container-date label{
   width: 100%;
 }
 .box-date {
@@ -1000,6 +1003,7 @@ footer {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   opacity: 1;
+
 }
 
 .group-btns a:hover {
