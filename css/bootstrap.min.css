@@ -2982,9 +2982,9 @@ select[multiple].input-lg, textarea.input-lg {
   line-height: 1.3333333
 }
 
-.has-feedback {
+/*.has-feedback {
   position: relative
-}
+}*/
 
 .has-feedback .form-control {
   /*padding-right: 42.5px*/

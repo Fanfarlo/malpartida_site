@@ -538,7 +538,6 @@ fieldset {
   margin: 0;
 }
 
-
 #cotizacion .has-error .help-block {
   font-size: .9em;
   color: #ff2d00;
@@ -547,7 +546,6 @@ fieldset {
 #cotizacion .has-error .form-control {
   border-color: #FF2D00;
 }
-
 
 .cont-trayecto {
   display: flex;
@@ -615,22 +613,31 @@ fieldset {
 
 /*textbox*/
 
-input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], input[type=date], input[type=time], textarea {
+input[type=text], input[type=email], input[type=password], input[type=tel], input[type=number], textarea {
   display: block;
   width: 100%;
   border: 1px solid #05386b;
   margin: 10px 0 25px 0;
 }
 
-
-
 input[type=text], input[type=email], input[type=password], input[type=tel] {
   padding: 20px 0 20px 35px;
 }
+
 input[type=date], input[type=time] {
   padding: 10px;
+  width: 94%;
+  border: 1px solid #05386b;
+  margin: 10px 0 25px 0;
 }
-#cotizacion .timestyle{
+
+/*input[type=date]{
+  width: 100%;
+}
+input[type=time]{
+width: 100%;
+}*/
+#cotizacion .timestyle {
   padding: 10px;
 }
 
@@ -678,17 +685,16 @@ input[type=submit]:hover {
   -ms-flex-pack: justify;
   -webkit-box-pack: justify;
   justify-content: space-between;
+  width: 100%;
 }
-
 .box-date {
-  width: 155px;
-  margin-right: 2%;
+
 }
 
 .box-time {
-  width: 120px;
-  margin-right: auto;
+
 }
+
 
 .wraper {
   position: relative;
@@ -1107,6 +1113,21 @@ footer {
   #featured .hero3 {
     background-image: url("../img/hero3.jpg");
   }
+  input[type=date], input[type=time] {
+    display: block;
+    width: 100%;
+    border: 1px solid #05386b;
+    margin: 10px 0 25px 0;
+  }
+  .box-date {
+    width: 170px;
+    margin-right: 2%;
+  }
+
+  .box-time {
+    width: 130px;
+    margin-right: auto;
+  }
 }
 
 @media screen and (min-width:981px) {
@@ -1213,5 +1234,21 @@ footer {
     width: 980px;
     margin: 0 auto;
     padding: 40px 30px 80px 30px;
+  }
+  input[type=date], input[type=time] {
+    display: block;
+    width: 100%;
+    border: 1px solid #05386b;
+    margin: 10px 0 25px 0;
+  }
+
+  .box-date {
+    width: 170px;
+    margin-right: 2%;
+  }
+
+  .box-time {
+    width: 130px;
+    margin-right: auto;
   }
 }

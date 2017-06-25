@@ -49,7 +49,7 @@
             ."Caracteristicas Partida: ".$caracpartida."<br>\n"
             ."Dirección de Llegada: ".$direcllegada."<br>\n"
             ."Piso de Llegada: ".$pisollegada."<br>\n"
-            ."Caracteristicas Llegada: ".$caracllegada."<br>\n"
+            ."Caracteristicas Llegada: ".$caracllegada."<br>\n";
 
 
     mail($toemail, $subject, $body, $headers);
