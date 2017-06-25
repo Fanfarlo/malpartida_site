@@ -28,23 +28,8 @@ p {
   margin: 0;
 }
 
-input[type="color"],
-input[type="date"],
-input[type="datetime"],
-input[type="datetime-local"],
-input[type="email"],
-input[type="month"],
-input[type="number"],
-input[type="password"],
- input[type="search"],
- input[type="tel"],
-  input[type="text"],
-   input[type="time"],
-   input[type="url"],
-   input[type="week"],
-   select:focus,
-   textarea {
-  font-size:1em;
+input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], select:focus, textarea {
+  font-size: 1em;
 }
 
 
@@ -220,7 +205,6 @@ a.taphover:hover, a.taphover.hover {
 }
 
 .box {
-
   font-size: 1em;
   text-align: center;
   font-weight: 700;
@@ -302,18 +286,21 @@ a.taphover:hover, a.taphover.hover {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-
 }
 
-#featured .hero1{
+#featured .hero1 {
   background-image: url("../img/hero1-600.jpg");
 }
-#featured .hero2{
+
+#featured .hero2 {
   background-image: url("../img/hero2-700.jpg");
 }
-#featured .hero3{
+
+#featured .hero3 {
   background-image: url("../img/hero3-600.jpg");
 }
+
+
 /**  Carousel Fade **/
 
 
@@ -395,7 +382,6 @@ a.taphover:hover, a.taphover.hover {
 
 .carousel-caption p {
   font-family: 'Share Tech', sans-serif;
-
 }
 
 .carousel-caption a {
@@ -510,7 +496,6 @@ a.taphover:hover, a.taphover.hover {
 /*Form styles*/
 
 form {
-
   height: auto;
   font-size: 1.2em;
   color: #05386b;
@@ -540,6 +525,43 @@ fieldset {
   border: none;
 }
 
+#cotizacion .has-success .form-control-feedback {
+  color: rgb(92, 219, 149);
+}
+
+#cotizacion .has-success .form-control {
+  border-color: rgb(92, 219, 149);
+}
+
+#cotizacion .has-error .form-control-feedback, #presupuesto-malpartida .has-error .help-block {
+  color: #FF2D00;
+  margin: 0;
+}
+
+
+#cotizacion .has-error .help-block {
+  font-size: .9em;
+  color: #ff2d00;
+}
+
+#cotizacion .has-error .form-control {
+  border-color: #FF2D00;
+}
+
+
+.cont-trayecto {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cont-direc {
+  width: 85%;
+}
+
+.cont-piso {
+  width: 15%;
+}
+
 
 /*checkboxes*/
 
@@ -548,7 +570,7 @@ fieldset {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 .checkboxes li {
@@ -598,21 +620,30 @@ input[type=text], input[type=email], input[type=password], input[type=tel], inpu
   width: 100%;
   border: 1px solid #05386b;
   margin: 10px 0 25px 0;
-
 }
 
-input[type=date], input[type=time] {
-  padding: 10px;
-}
+
 
 input[type=text], input[type=email], input[type=password], input[type=tel] {
   padding: 20px 0 20px 35px;
+}
+input[type=date], input[type=time] {
+  padding: 10px;
+}
+#cotizacion .timestyle{
+  padding: 10px;
+}
+
+input[type=number] {
+  padding: 20px 13px;
+  border-left: none;
 }
 
 textarea {
   height: auto;
   overflow-y: scroll;
   padding: 16px 8px 5px 35px;
+  resize: none;
 }
 
 input[type=submit] {
@@ -671,7 +702,7 @@ input[type=submit]:hover {
 }
 
 .submit-container {
-  max-width: 80%;
+  max-width: 100%;
   margin: 0 auto;
 }
 
@@ -756,7 +787,8 @@ main {
   -ms-flex-item-align: center;
   align-self: center;
 }
-.social-nav{
+
+.social-nav {
   width: 100%;
   height: 100%;
   display: -webkit-box;
@@ -768,18 +800,18 @@ main {
   -ms-flex-pack: center;
   justify-content: center;
 }
+
 .social-nav h1 {
   color: #05386b;
   font-size: 1.3em;
   margin: 0 8px 0 0;
   padding: 9px 0;
-
-
 }
-.facebook-bot a, .google-bot a{
+
+.facebook-bot a, .google-bot a {
   padding: 0 2px;
-
 }
+
 .copyright {
   width: 100%;
   padding: 3px 15px;
@@ -968,12 +1000,44 @@ footer {
   opacity: 0.5;
 }
 
-@media screen and (min-width:767px) and (max-width:980px) {
-form{
+
+/*replyform*/
+
+#replyform {
   width: 100%;
-  margin: 0;
-  padding: 0 70px 60px 70px;
+  padding: 40px 15px 80px 15px;
+  color: black;
+  font-size: 1.2em;
+  line-height: 27px;
+  background: white;
 }
+
+.send-logo {
+  width: 100px;
+  height: 48px;
+  transform: rotate(350deg);
+  margin: 0 0 -10px 0;
+  padding: 0 0 0 28px;
+}
+
+#replyform h1 {
+  margin: 0 0 20px 0;
+  color: #ff9900;
+  border-bottom: 10px solid #05386b;
+  padding: 0 0 3px 0px;
+  letter-spacing: 1px;
+}
+
+#replyform p {
+  padding: 0 0 10px 0;
+}
+
+@media screen and (min-width:767px) and (max-width:980px) {
+  form {
+    width: 100%;
+    margin: 0;
+    padding: 0 70px 60px 70px;
+  }
   .ham-btn {
     display: none
   }
@@ -1000,7 +1064,6 @@ form{
     margin: 0 auto;
     padding: 0 15px;
   }
-
   .box-serv {
     width: 33.3%;
   }
@@ -1014,9 +1077,7 @@ form{
   .nosotros h1 {
     padding: 0 15px;
   }
-  .box-contact {
-
-  }
+  .box-contact {}
   .contact {
     height: 100%;
   }
@@ -1035,18 +1096,17 @@ form{
     display: flex;
   }
   .submit-container {
-    max-width: 30%;
+    max-width: 20%;
   }
-  #featured .hero1{
+  #featured .hero1 {
     background-image: url("../img/hero1.jpg");
   }
-  #featured .hero2{
+  #featured .hero2 {
     background-image: url("../img/hero2.jpg");
   }
-  #featured .hero3{
+  #featured .hero3 {
     background-image: url("../img/hero3.jpg");
   }
-
 }
 
 @media screen and (min-width:981px) {
@@ -1069,13 +1129,11 @@ form{
     width: 980px;
     margin: 0 auto;
   }
-  .carousel-caption p{
+  .carousel-caption p {
     width: 100%;
   }
-
   .submit-container {
-    max-width: 30%;
-
+    max-width: 20%;
   }
   .btn-hero {
     width: 35%;
@@ -1139,17 +1197,21 @@ form{
     margin: 0 auto;
     padding: 0 100px 60px 100px;
   }
-
   .submit-container {
-    max-width: 30%;
+    max-width: 20%;
   }
-  #featured .hero1{
+  #featured .hero1 {
     background-image: url("../img/hero1.jpg");
   }
-  #featured .hero2{
+  #featured .hero2 {
     background-image: url("../img/hero2.jpg");
   }
-  #featured .hero3{
+  #featured .hero3 {
     background-image: url("../img/hero3.jpg");
+  }
+  #replyform {
+    width: 980px;
+    margin: 0 auto;
+    padding: 40px 30px 80px 30px;
   }
 }

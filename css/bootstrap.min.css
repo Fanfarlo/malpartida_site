@@ -1642,7 +1642,7 @@ a.bg-danger:focus, a.bg-danger:hover {
 
 ol, ul {
   margin-top: 0;
-  margin-bottom: 10px
+  margin-top: -15px
 }
 
 ol ol, ol ul, ul ol, ul ul {
@@ -2987,10 +2987,10 @@ select[multiple].input-lg, textarea.input-lg {
 }
 
 .has-feedback .form-control {
-  padding-right: 42.5px
+  /*padding-right: 42.5px*/
 }
 
-.form-control-feedback {
+/*.form-control-feedback {
   position: absolute;
   top: 0;
   right: 0;
@@ -3001,7 +3001,7 @@ select[multiple].input-lg, textarea.input-lg {
   line-height: 34px;
   text-align: center;
   pointer-events: none
-}
+}*/
 
 .form-group-lg .form-control+.form-control-feedback, .input-group-lg+.form-control-feedback, .input-lg+.form-control-feedback {
   width: 46px;

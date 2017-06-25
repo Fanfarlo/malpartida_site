@@ -64,7 +64,7 @@
           </div>
     </nav>
     <main>
-        <form method="post">
+        <form action="formmail.php" method="post"  id="cotizacion" data-toggle="validator">
             <h1>Cotización</h1>
             <div class="fieldsets">
                 <fieldset id="service">
@@ -97,58 +97,82 @@
                         </li>
                     </ul>
                     <div class="container-date">
-                        <div class="box-date">
-                            <label for="fecha">Fecha<input lang="es" type="date"  name="fecha" id="fecha"></label>
+                        <div class="box-date form-group has-feedback">
+                            <label for="fecha">Fecha<input class="form-control" lang="es" type="date"  name="fecha" id="fecha"></label>
                         </div>
-                        <div class="box-time">
-                            <label for="hora">Hora<input class="form-control" type="time" name="hora" id="hora"></label>
+                        <div class="box-time form-group has-feedback">
+                            <label for="hora">Hora<input class="form-control timestyle" type="time" name="hora" id="hora"></label>
                         </div>
                     </div>
                 </fieldset>
                 <fieldset id="list">
                     <h2>Lista de Articulos</h2>
                     <label for="art">Detallar los artículos a transportar</label>
-                    <div class="wraper"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                        <textarea name="art" rows="7" placeholder="Juego de sala 3-2-1, refrigerador, cocina, lavadora, 1 cama/2 plazas, juego de comedor/6 sillas/mesa de vidrio, 2 televisores, 2 veladores, etc..."></textarea>
+                    <div class="wraper form-group has-feedback"><i class="form-control-feedback fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <textarea class="form-control" name="art" rows="7" placeholder="Juego de sala 3-2-1, refrigerador, cocina, lavadora, 1 cama(2 plazas), juego de comedor(6 sillas, mesa de vidrio), 2 televisores, 2 veladores, etc..." required></textarea>
+                        <div class="help-block with-errors"></div>
                     </div>
+                    <div class="help-block with-errors"></div>
                 </fieldset>
                 <fieldset id="trayecto">
                     <h2>Trayecto</h2>
-                    <label for="point">Inicio</label>
-                    <div class="wraper"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <input type="text" placeholder="Jr. Bernardo Alcedo 470, Lince" name="point">
+                    <div class="cont-trayecto">
+                      <div class="cont-direc form-group has-feedback">
+                          <label for="direcpartida">Inicio</label>
+                          <div class="wraper">
+                          <i class="form-control-feedback fa fa-map-marker" aria-hidden="true"></i>
+                          <input class="form-control" type="text" placeholder="Jr. Bernardo Alcedo 470, Lince" name="direcpartida" required>
+                          <div class="help-block with-errors"></div>
+                          </div>
+                      </div>
+                      <div class="cont-piso form-group has-feedback">
+                          <label for="pisopartida">Piso</label>
+                          <input class="form-control" name="pisopartida" id="pisopartida" type="number" min="1" max="50" required>
+                      </div>
                     </div>
                     <label>* Características del lugar</label>
-                    <div class="wraper"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                        <textarea name="art" rows="3" placeholder="Piso 5, condominio, prohibido uso del ascesor, escalera amplia, etc..."></textarea>
+                    <div class="wraper form-group has-feedback"><i class="form-control-feedback fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <textarea class="form-control" name="caracpartida" rows="3" placeholder="Condominio, prohibido uso del ascesor, escalera amplia, etc..."></textarea>
                     </div>
-                    <label for="point2">Destino</label>
-                    <div class="wraper"><i class="fa fa-map-marker" aria-hidden="true"></i>
-                        <input type="text" placeholder="Av. Arequipa 3950, Miraflores" name="point2">
+                    <div class="cont-trayecto">
+                      <div class="cont-direc form-group has-feedback">
+                        <label for="direcllegada">Destino</label>
+                        <div class="wraper"><i class="form-control-feedback fa fa-map-marker" aria-hidden="true"></i>
+                            <input class="form-control" type="text" placeholder="Av. Arequipa 3950, Miraflores" name="direcllegada" required>
+                            <div class="help-block with-errors"></div>
+                        </div>
+                      </div>
+                    <div class="cont-piso form-group has-feedback">
+                        <label for="pisollegada">Piso</label>
+                        <input class="form-control" name="pisollegada" id="pisollegada" type="number" min="1" max="50" required>
                     </div>
+                  </div>
                     <label>* Características del lugar</label>
-                    <div class="wraper"><i class="fa fa-pencil-square-o" aria-hidden="true"></i>
-                        <textarea name="art" rows="3" placeholder="Piso 3, interior, escalera caracol, etc..."></textarea>
+                    <div class="wraper form-group has-feedback"><i class="form-control-feedback fa fa-pencil-square-o" aria-hidden="true"></i>
+                        <textarea class="form-control" name="caracllegada" rows="3" placeholder="Muebles no salen por la escalera, puerta a calle, escalera caracol, etc..."></textarea>
                     </div>
                 </fieldset>
                 <fieldset id="personal">
                     <h2>Información Personal</h2>
                     <label for="name">Nombre</label>
-                    <div class="wraper"><i class="fa fa-user" aria-hidden="true"></i>
-                        <input type="text" placeholder="Nombre" name="nombre">
+                    <div class="wraper form-group has-feedback"><i class="form-control-feedback fa fa-user" aria-hidden="true"></i>
+                        <input class="form-control" type="text" placeholder="Nombre" name="nombre" required>
+                        <div class="help-block with-errors"></div>
                     </div>
                     <label for="phone">Teléfono</label>
-                    <div class="wraper"><i class="fa fa-phone" aria-hidden="true"></i>
-                        <input type="tel" placeholder="Teléfono" name="phone">
+                    <div class="wraper form-group has-feedback"><i class="form-control-feedback fa fa-phone" aria-hidden="true"></i>
+                        <input class="form-control" type="tel" placeholder="Teléfono" name="phone" pattern="[0-9]{9}">
+                        <div class="help-block with-errors"></div>
                     </div>
                     <label for="mail">Email</label>
-                    <div class="wraper"><i class="fa fa-envelope" aria-hidden="true"></i>
-                        <input type="email" name="email" placeholder="Email">
+                    <div class="wraper form-group has-feedback"><i class="form-control-feedback fa fa-envelope" aria-hidden="true"></i>
+                        <input class="form-control" type="email" placeholder="Email" name="email" required>
+                        <div class="help-block with-errors"></div>
                     </div>
                 </fieldset>
                 <div class="submit-container">
-                <input type="submit" value="ENVIAR"><div class="send-btn"></div>
-              </div>
+                  <input type="submit" class="send-btn" value="ENVIAR">
+                </div>
             </div>
         </form>
     </main>
@@ -186,7 +210,15 @@
           <p>© 2017 Transportes y Embalajes Malpartida All Rights Reserved. Designed by Miguelo</p>
         </div>
     </footer>
+
+
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script  src="js/modernizr-custom.js"></script>
+    <script async src="js/time-polyfill.min.js"></script>
+    <script async src="js/date-input-polyfill.dist.js"></script>
+
+    <script src="js/validator.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 
